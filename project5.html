@@ -1,0 +1,3268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .report {
+        width: 60%;
+        margin-bottom: 10em;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    .bg-custom {
+      background-image: url("your-background-image-url.jpg");
+      background-size: cover;
+      color: rgb(190, 143, 143);
+    }
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 3em;
+    }
+    .custom-border {
+      border-width: 5px !important; /* Adjust the border width as needed */
+      border-color: rgb(
+        143,
+        123,
+        123
+      ) !important; /* Optional: change the border color */
+      border-radius: 20px;
+    }
+  </style>
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: rgb(224, 143, 188);">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link" href="./index.html" style = "color: white;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown" style = "color: white;"
+              >Project</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./project1.html"
+                  >CFA Research Challenge : Stock Price Prediction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project2.html"
+                  >Portfolio Analysis (Python, Pandas)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project3.html"
+                  >House price prediction (MLP)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project4.html"
+                  >Image Classification (CNN)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project5.html"
+                  >Collaborative Filtering (Deep Learning)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project6.html"
+                  >Ruin Probability Prediction (R)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project7.html"
+                  >Health status prediction (R)</a
+                >
+              </li>
+                            <!-- <li>
+                <a class="dropdown-item" href="./project8.html"
+                  >Data Visualization (Tableau)</a
+                >
+              </li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html" style = "color: white;">Resume</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-primary" type="button" style = "background-color: rgb(125, 145, 211); border: none;">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+    <div style = "margin-bottom: 5em;"></div>
+    <div class = "container report">
+      <p style="margin: 0pt">
+        <img
+          src="https://i.ytimg.com/vi/-L-EIrI425c/maxresdefault.jpg"
+          width="2"
+          height="2"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; text-align: center">
+        <img
+          src="./project5_img/1.png"
+          width="324"
+          height="88"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; text-align: center">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt; text-align: center">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >Enhancing User Experience through Collaborative</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+        >
+        </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >Filtering</span
+        >
+      </p>
+      <p style="margin: 0pt; text-align: center">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Python – Google </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Colab</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >ABSTRACT</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >The proliferation of digital content necessitates advanced
+          recommender systems to enhance user experience through personalized
+          suggestions. Collaborative filtering, a method reliant on user
+          preference patterns rather than item characteristics, offers a
+          solution by predicting user behavior based on historical data. This
+          project applies matrix factorization, a collaborative filtering
+          technique, to the </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >MovieLens</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          1M dataset to develop an explicit feedback recommender system. By
+          analyzing user-item-rating triplets, the project aims to create
+          predictive models that forecast user ratings for unviewed content,
+          driving enhanced personalization and user engagement on digital
+          platforms</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Objective</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >s</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >To understand the dynamics of user preferences in online content
+          consumption.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >To develop a matrix factorization model to predict user ratings for
+          movies in the </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >MovieLens</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          dataset.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >To evaluate the accuracy of the recommender system in forecasting
+          user preferences.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >To explore the potential of collaborative filtering in various
+          digital service platforms beyond movie recommendations.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Methodology</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Data Processing</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >: Cleaning and preparing the data for analysis, ensuring the
+          integrity of user-item interactions.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Model Development</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >: Implementing matrix factorization techniques to uncover latent
+          factors from user ratings.</span
+        >
+      </p>
+      <ol type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 35.11pt;
+            padding-left: 6.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >Start with user-item-rating triplets, conveying the information
+            that user</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span
+            style="
+              color: #000000;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-style: italic;
+            "
+            >i</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >gave some item</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span
+            style="
+              color: #000000;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-style: italic;
+            "
+            >j</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >rating</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span
+            style="
+              color: #000000;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-style: italic;
+            "
+            >r</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >.</span
+          >
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 35.11pt;
+            padding-left: 6.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >Represent both users and items as high-dimensional vectors of
+            numbers. For example, a user could be represented by</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #000000; font-family: Calibri; font-size: 12pt"
+            >[0.3, -1.2, 0.5]</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >and an item by</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #000000; font-family: Calibri; font-size: 12pt"
+            >[1.0, -0.3, -0.6]</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >.</span
+          >
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 35.11pt;
+            padding-left: 6.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >The representations should be chosen so that, when we multiplied
+            together (via</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><a
+            style="color: #212121"
+            href="https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDot_product"
+            target="_blank"
+            ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+              >dot prod</span
+            ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+              >u</span
+            ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+              >cts</span
+            ></a
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >), we can recover the original ratings.</span
+          >
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 35.11pt;
+            padding-left: 6.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >The utility of the model then is derived from the fact that if we
+            multiply the user vector of a user with the item vector of some item
+            they</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span
+            style="
+              color: #000000;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-style: italic;
+            "
+            >have not</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >rated, we hope to obtain a </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >predication</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >for the rating they would have given to it had they seen it.</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt 5pt 21pt">
+        <img
+          src="./project5_img/2.png"
+          width="490"
+          height="180"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Model Training</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >: Adjusting hyperparameters and training the model to fit the
+          dataset.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Model Evaluation</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >: Testing the model against a subset of data to evaluate predictive
+          accuracy and performance.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Prediction for New User</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >: </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Creat</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >ing</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          a new user, predict the ratings this user would give to other movies
+          based on my own past movie ratings, and compare it with my own movie
+          preferences.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Movie Valuation</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >: </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Predicting the value of movies based on the predicted ratings.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Expected Outcome</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >A functional matrix factorization model capable of providing
+          personalized content recommendations.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >A comparative analysis of the model's performance against baseline
+          recommendation algorithms.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Insights into latent factors that significantly influence user
+          preferences.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >A foundation for implementing collaborative filtering in diverse
+          digital platforms, potentially leading to improved user satisfaction
+          and engagement.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Recommendations for content providers on leveraging user data to
+          optimize service offerings.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 20pt 0pt; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DATA PROCESSING</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Overview</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >I first </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >took a look</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          at the </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >histogram of movie popularity and user activity based on rating</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          in the train data.</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          From the data visualization we can tell that most movies in </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Netflix only have small </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >number</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          of ratings (smaller than 500 ratings), and most users do not
+          frequently rate for movies (smaller than 500 ratings).</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          Then I c</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >ompute</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >d</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          the average ratings for every movie and find the top 20 highly rated
+          movies</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          and I found that they</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >a</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >re</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          not quite popular, which indicated that we </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >can not</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >evaluate future movies’ ratings based on the average past ratings
+          because they may only have few ratings which are </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >pretty high</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project5_img/3.png"
+          width="700"
+          height="260"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Data Preparation</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >I</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          split the data in</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >training (80%)</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >,</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >val</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >idation</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          (10%)</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >and</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >test</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          (10%)</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >sets. </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >We see that a few movies</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          in the test data</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          are not rated in the train set. For those movies, it is hard to
+          predict their ratings accurately.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Then</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >I</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          construct 3 tensors containing the</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="font-family: Calibri; font-size: 12pt">user_num</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >,</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="font-family: Calibri; font-size: 12pt">item_num</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >and</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="font-family: Calibri; font-size: 12pt">rating</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >for the training</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >, validation, testing</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          set</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >seperately</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >. All tensors have the same shape so</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >that</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >train_user_num</span
+        ><span style="font-family: Calibri; font-size: 12pt">[</span
+        ><span style="font-family: Calibri; font-size: 12pt">i</span
+        ><span style="font-family: Calibri; font-size: 12pt">]</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >watched</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >train_item_num</span
+        ><span style="font-family: Calibri; font-size: 12pt">[</span
+        ><span style="font-family: Calibri; font-size: 12pt">i</span
+        ><span style="font-family: Calibri; font-size: 12pt">]</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >and gave a rating of</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >train_rating</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >[</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >i</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >].</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 20pt 0pt; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MODEL </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DEVELOPMENT</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Embedding Module</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Now, we define the</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Model_dot</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Class </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >which </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >composed of a 4</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >embedding</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >layers:</span
+        >
+      </p>
+      <ul type="disc" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: serif;
+            font-size: 10pt;
+            margin: 5pt 0pt 5pt 27.6pt;
+            padding-left: 8.4pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >a</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >(</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >num_users</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            x </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >latent_dim</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >)</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >embedding layer to represent users,</span
+          >
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: serif;
+            font-size: 10pt;
+            margin: 5pt 0pt 5pt 27.6pt;
+            padding-left: 8.4pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >a</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >(</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >num_items</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            x </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >latent_dim</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >)</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >embedding layer to represent items,</span
+          >
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: serif;
+            font-size: 10pt;
+            margin: 5pt 0pt 5pt 27.6pt;
+            padding-left: 8.4pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >a</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >(</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >num_users</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            x 1)</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >embedding layer to represent user biases, and</span
+          >
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: serif;
+            font-size: 10pt;
+            margin: 5pt 0pt 5pt 27.6pt;
+            padding-left: 8.4pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >a</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >(</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >num_items</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            x 1)</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >embedding layer to represent item biases.</span
+          >
+        </li>
+      </ul>
+      <p style="margin: 0pt">
+        <img
+          src="./project5_img/0.png"
+          width="300"
+          height="100"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Factorization Model</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Now we define</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="font-family: Calibri; font-size: 12pt">Factorization</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt">Model</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >class that allows us to train and evaluate the explicit factorization
+          models.</span
+        >
+      </p>
+      <ul type="disc" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: serif;
+            font-size: 10pt;
+            margin: 5pt 0pt 5pt 27.6pt;
+            padding-left: 8.4pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >The</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >fit</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >function should take as argument a </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >dataloader</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            for the training and a </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >dataloader</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            for the validation. At the end of each epoch, </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >it</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            run</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >s</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            the test method on the validation set</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            and</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            print</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >s</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            both the loss on the training set and on the validation set to see
+            if </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >we</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+            are overfitting.</span
+          >
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            color: #212121;
+            font-family: serif;
+            font-size: 10pt;
+            margin: 5pt 0pt 5pt 27.6pt;
+            padding-left: 8.4pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >Weight decay, or</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >&#xa0;</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >L2 regularization, consists in adding to your loss function the sum
+            of all the weights squared. </span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >W</span
+          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+            >hen we compute the gradients, it will add a contribution to them
+            that will encourage the weights to be as small as possible.</span
+          >
+        </li>
+      </ul>
+      <p style="background-color: #ffffff; margin: 20pt 0pt; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MODEL TRAINING</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >I t</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >rain the model and plot the train losses and valid losses over </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >epochs</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >. At the third epoch, I stop the training, because the following
+          trainings will decrease the training loss but increase the validation
+          loss, which is a sign for overfitting.</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >The</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt">t</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt"
+          >est RMSE</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt">
+          is about</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt">
+          0.99</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt">
+          and the</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt"> </span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt">t</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt"
+          >est MAE</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt">
+          is about</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt">
+          0.76</span
+        ><span style="font-family: 'Times New Roman'; font-size: 12pt">.</span>
+      </p>
+      <p style="margin: 0pt">
+        <img
+          src="./project5_img/4.png"
+          width="500"
+          height="300"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >I </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >also try different parameters and here is the result:</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <table
+        cellspacing="0"
+        cellpadding="0"
+        style="border-collapse: collapse; margin: 0pt auto"
+      >
+        <tr>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 80pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >Embedding_dim</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 44.65pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >n_iter</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 67.3pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >Learning_rate</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 39.8pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >L2</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 60.05pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >RMSE</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 58.2pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >MAE</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 80pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >32</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 44.65pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >10</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 67.3pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >1e-2</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 39.8pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 60.05pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0.992773</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 58.2pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0.764479</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 80pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >50</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 44.65pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >5</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 67.3pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0.005</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 39.8pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 60.05pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0.925936</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 58.2pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0.672455</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 80pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >8</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 44.65pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >60</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 67.3pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0.001</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 39.8pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 60.05pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0.933407</span
+              >
+            </p>
+          </td>
+          <td
+            style="
+              border-bottom-color: #000000;
+              border-bottom-style: solid;
+              border-bottom-width: 0.75pt;
+              border-left-color: #000000;
+              border-left-style: solid;
+              border-left-width: 0.75pt;
+              border-right-color: #000000;
+              border-right-style: solid;
+              border-right-width: 0.75pt;
+              border-top-color: #000000;
+              border-top-style: solid;
+              border-top-width: 0.75pt;
+              padding-left: 5.03pt;
+              padding-right: 5.03pt;
+              vertical-align: top;
+              width: 58.2pt;
+            "
+          >
+            <p style="margin: 0pt; text-align: center">
+              <span style="font-family: 'Times New Roman'; font-size: 12pt"
+                >0.679689</span
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p style="background-color: #ffffff; margin: 20pt 0pt; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MODEL </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >EVALUATION</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Interpreting Biases</span
+        >
+
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >To interpret the biases, I</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+        >
+          rank the movies according to their bias</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+        >
+          and print the Top 10 movies with highest biases. They are:
+        </span>
+      </p>
+      <p style="margin: 0pt 0pt 0pt 24pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <ol type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Shawshank Redemption, The (1994)', 0.93047535]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Star Wars: Episode IV - A New Hope (1977)', 0.90628374]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Raiders of the Lost Ark (1981)', 0.8904129]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Sixth Sense, The (1999)', 0.88602823]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >["Schindler's List (1993)", 0.8849474]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Godfather, The (1972)', 0.86447656]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Usual Suspects, The (1995)', 0.84592587]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Wrong Trousers, The (1993)', 0.80962205]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 56.29pt;
+            padding-left: 6.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Rear Window (1954)', 0.7753089]</span
+          >
+        </li>
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0pt 0pt 0pt 62.37pt;
+            padding-left: 0.63pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >['Silence of the Lambs, The (1991)', 0.7645593]</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">It means</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          that for each of these above movies, even when a user is NOT well
+          matched to its latent factors (which, as we will see in a moment, tend
+          to represent things like level of action, age of movie, and so forth),
+          they still generally like it. We could have simply sorted the movies
+          directly by their average </span
+        ><span style="font-family: Calibri; font-size: 12pt">rating, but</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          looking at the learned bias tells us something much more interesting.
+          It tells us not just whether a movie is of a kind that people tend to
+          enjoy watching, but that people tend to like watching it even if it is
+          not of a kind that they normally enjoy</span
+        ><span style="font-family: Calibri; font-size: 12pt">. F</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >or instance, even if you don't normally enjoy horror thriller movies,
+          you might enjoy Silence of the Lambs!</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >PCA of Embeddings</span
+        >
+
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >It is not quite so easy to directly interpret the embedding matrices.
+          There are just too many factors for a human to look at. But </span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >&#xa0;</span
+        ><span
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-style: italic;
+            font-weight: normal;
+          "
+          >principal component analysis</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >&#xa0;</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >(PCA) can pull out the most important underlying</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >&#xa0;</span
+        ><span
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            font-style: italic;
+            font-weight: normal;
+          "
+          >directions</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >&#xa0;</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >in such a matrix. We can visualize the movie embeddings based on two
+          of the strongest PCA components.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project5_img/5.png"
+          width="500"
+          height="450"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">T</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >he movies that share similar attributes are close to each other. For
+          example, "Star Wars: Episode V - The Empire Strikes Back (1980)" and
+          "Raiders of the Lost Ark (1981)" likely share several attributes, such
+          as being adventure films, directed by filmmakers who were part of the
+          movie brat generation (George Lucas and Steven Spielberg,
+          respectively), and both being major blockbusters of the early 1980s.
+          On the other hand, films like "Schindler's List (1993)" and "The
+          Shawshank Redemption (1994)" are also close to each other and may
+          share attributes such as being critically acclaimed dramas released in
+          the early 1990s, possibly sharing similar themes of human endurance
+          and the triumph of the spirit.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 20pt 0pt; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >PREDICTION F</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >OR</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+        >
+          NEW USER</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Now that we have </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >successfully</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          trained a model, let's see how to deal with the situation where we
+          have a new user.</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >W</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >e can utilize the learned movie embedding vectors to estimate new
+          users' embedding vector, based on a few ratings from them. You may
+          have noticed that when you sign up for services such as Pandora and
+          Netflix, they tend to ask you a few questions about what movie or
+          music you like; this is how they come up with your initial
+          collaborative filtering recommendations.</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          To mimic the situation, I </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >give 40 ratings between 1-5 to the movies that </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >I</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          watched before among the mostly rated movies</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >. I </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >comp</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >ute my</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          own embedding vector</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >my_emb_np</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >and</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >my_emb_bias</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >by running an </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >ordinary least squares</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          with L_2 regularization based on your ratings and the previously
+          computed movie embedding vectors. In other words,</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >item_emb_np</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >is the co-</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >variate</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          and </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >my</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          own 40 ratings are the response.</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Then</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          I</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          compute the predicted ratings for all movies using </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >my</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          embedding vectors and biases, together with the movie embedding
+          vectors and biases.</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Finally</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          we can calculate the predicted ratings for other movies, which are
+          quite align with my preference.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MOVIE EVALUATION</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >The rating data provided the company like Netflix information about
+          the value of a movie that was not available to movie production
+          studios. The collaborative </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >filting</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          algorithm allows Netflix to accurately value the content in a
+          data-driven manner. For example, if Netflix were offered the
+          opportunity to license Toy Story (1995), it would need to provide
+          Disney an initial quote of the license fee. Traditional methods
+          suggest looking at box office returns of Toy Story franchise and
+          projecting the potential value of the film.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >In this following, we will explore a novel approach to determine the
+          valuation of a movie based on the predicted ratings. We make the
+          following simplifying </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >assumptions</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          (Note that these assumptions can be certainly relaxed with more
+          complicated procedures and data):</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+        </span>
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 21pt; text-indent: -21pt">
+        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Netflix are focusing on the top 1000 active users and 1000 popular
+          movies (with </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >the most</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          number of observed ratings). In other words, in the following movie
+          valuation calculation, we just consider the top 1000 </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >active</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          users and 1000 popular movies, disregarding the rest.</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 21pt; text-indent: -21pt">
+        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >For each user, the total amount of viewing time is proportional to
+          the number of observed ratings. In other words, more active users
+          spend more time on </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Netflix;</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 21pt; text-indent: -21pt">
+        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >For each given user, the viewing time across different movies follow
+          a </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Zipf's</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          law, that is</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 21pt; text-align: center">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Viewtime</span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+          of movie </span
+        ><span
+          style="
+            color: #212121;
+            font-family: 'Cambria Math';
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >𝑖</span
+        ><span
+          style="
+            color: #212121;
+            font-family: 'Cambria Math';
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+        </span
+        ><span
+          style="
+            color: #212121;
+            font-family: 'Cambria Math';
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >∝</span
+        ><span
+          style="
+            color: #212121;
+            font-family: 'Cambria Math';
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+        </span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1</span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+          / </span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >rank of </span
+        ><span
+          style="
+            color: #212121;
+            font-family: 'Cambria Math';
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >𝑖</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 21pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Here the rank of  </span
+        ><span
+          style="color: #212121; font-family: 'Cambria Math'; font-size: 12pt"
+          >𝑖</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >  is determined by sorting the predicted rating of movie  </span
+        ><span
+          style="color: #212121; font-family: 'Cambria Math'; font-size: 12pt"
+          >𝑖</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >  by the user in descending order. In other words, the user </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >spend</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          less time on watching movies with lower ratings.</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 21pt; text-indent: -21pt">
+        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Netflix has a fixed total budget of 1 </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Billion</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          dollars to license the content;</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 21pt; text-indent: -21pt">
+        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >Netflix estimates the value of a movie based on the expected share of
+          customer viewing time of the movie on its platform:</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 21pt; text-align: center">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Value of a movie </span
+        ><span
+          style="
+            color: #212121;
+            font-family: 'Cambria Math';
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >𝑖</span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+          =</span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+        </span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >View time of movie </span
+        ><span
+          style="
+            color: #212121;
+            font-family: 'Cambria Math';
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >𝑖</span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+          of all users</span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+          / </span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Total view time of all users</span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+        </span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >×</span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+        >
+        </span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Total content license budget</span
+        >
+      </p>
+      <p style="margin: 0pt; margin-top: 20px;">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >T</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >herefore</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >, we can get the Top 10 most valued movies:</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Star Wars: Episode IV - A New Hope (1977) </span
+        ><span
+          style="width: 1.01pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >2.095169e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >American Beauty (1999) </span
+        ><span
+          style="width: 9.41pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1.916395e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Godfather, The (1972) </span
+        ><span
+          style="width: 19.38pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1.846726e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Schindler's List (1993)</span
+        ><span
+          style="width: 3pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1.700484e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Citizen Kane (1941) </span
+        ><span
+          style="width: 12.43pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1.634564e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Pulp Fiction (1994) </span
+        ><span
+          style="width: 15.37pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1.553615e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Seven Samurai (The Magnificent Seven) (1954) 1.501116e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Casablanca (1942) </span
+        ><span
+          style="width: 18.09pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1.445230e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Raiders of the Lost Ark (1981) </span
+        ><span
+          style="width: 3.1pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1.437625e+07</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Wizard of Oz, The (1939) </span
+        ><span
+          style="width: 6.76pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="width: 21pt; text-indent: 0pt; display: inline-block"
+        ></span
+        ><span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >1.276394e+07</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >The movies that are top 30 rated but not in top 30 valued are</span
+        >
+      </p>
+
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Back to the Future (1985)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Braveheart (1995)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'E.T. the Extra-Terrestrial (1982)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Ghostbusters (1984)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Groundhog Day (1993)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Jurassic Park (1993)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'L.A. Confidential (1997)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Men in Black (1997)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Shakespeare in Love (1998)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Star Wars: Episode I - The Phantom Menace (1999)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Star Wars: Episode VI - Return of the Jedi (1983)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Terminator 2: Judgment Day (1991)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Terminator, The (1984)',</span
+        >
+      </p>
+      <p style="margin: 0pt 0pt 0pt 36pt">
+        <span
+          style="
+            color: #212121;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >'Toy Story (1995)'</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >The above movie valuation approach </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >takes into account</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          both the popularity of the movies and the ratings of the movies. We
+          see that some movies are very </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >popular</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >, but</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          does not have a high rating. For example, Toy Story (1995) is </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >amount</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          the top 30 most rated movies (with 2077 observed ratings), but its
+          average predicted rating is around 4.05. On the other hand, Seven
+          Samurai (The Magnificent Seven) (1954) is not the top 30 most rated
+          movies. Only 628 users rated this movie, but its predicted rating is
+          around 4.44. I guess that partially explains why this movie has been
+          remade several times. See the most recent remake in 2016.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >However, we should not take the above movie valuation for granted. It </span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
+          >definitely has</span
+        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
+          many issues, for example, does not take into account how recent the
+          movies are made. In practice Netflix has much rich data about user
+          view time, so it can produce much better movie valuation.
+          Nevertheless, through this simple analysis, we can see how the
+          recommender systems provides a promising, new way for content
+          valuation.</span
+        >
+      </p>
+    </div>
+
+
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

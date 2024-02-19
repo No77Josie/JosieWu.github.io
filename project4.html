@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project4</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .report {
+        width: 60%;
+        margin-bottom: 10em;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .bg-custom {
+      background-image: url("your-background-image-url.jpg");
+      background-size: cover;
+      color: rgb(190, 143, 143);
+    }
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 3em;
+    }
+    .custom-border {
+      border-width: 5px !important; /* Adjust the border width as needed */
+      border-color: rgb(
+        143,
+        123,
+        123
+      ) !important; /* Optional: change the border color */
+      border-radius: 20px;
+    }
+    .flex-container {
+        display: flex;
+        align-items: center; /* 如果你想要垂直居中对齐 */
+    }
+  </style>
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: rgb(224, 143, 188);">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link" href="./index.html" style = "color: white;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown" style = "color: white;"
+              >Project</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./project1.html"
+                  >CFA Research Challenge : Stock Price Prediction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project2.html"
+                  >Portfolio Analysis (Python, Pandas)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project3.html"
+                  >House price prediction (MLP)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project4.html"
+                  >Image Classification (CNN)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project5.html"
+                  >Collaborative Filtering (Deep Learning)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project6.html"
+                  >Ruin Probability Prediction (R)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project7.html"
+                  >Health status prediction (R)</a
+                >
+              </li>
+                            <!-- <li>
+                <a class="dropdown-item" href="./project8.html"
+                  >Data Visualization (Tableau)</a
+                >
+              </li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html" style = "color: white;">Resume</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-primary" type="button" style = "background-color: rgb(125, 145, 211); border: none;">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+    <div style = "margin-bottom: 5em;"></div>
+    
+    <div class="container report">
+      <p style="margin: 0pt">
+        <img
+          src="./project4_img/0.jpg"
+          width="2"
+          height="2"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >Ve</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >getable Image Classification</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >M</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >OTIVITION</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+        >
+          and </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DATA</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+        >
+        </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >UNDERSTANDING</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project4_img/0.jpg"
+          width="245"
+          height="233"
+          alt=""
+          style="
+            -aw-left-pos: 227.28pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 16.31pt;
+            -aw-wrap-type: square;
+            float: right;
+            margin: 0pt 9pt;
+          "
+        /><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Background</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >With the increasing availability of image data and the advancements
+          in computer vision, the task of recognizing vegetables from images has
+          gained importance. Accurate classification can aid farmers in
+          monitoring crop health, assist chefs in recipe recommendations, and
+          provide consumers with an interactive grocery shopping
+          experience.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Problem Description</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The primary challenge we aim to tackle is the development of a robust
+          and accurate vegetable image classification system. This involves
+          training a machine learning model to recognize and categorize various
+          vegetables based on their visual features. The model should be capable
+          of handling diverse datasets, encompassing different types of
+          vegetables, variations in lighting, and various angles of
+          capture.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Key Objectives</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Train a machine learning model using a labeled dataset of vegetable
+          images.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Achieve high accuracy in classifying a wide range of vegetables
+          commonly found in the market.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Implement the model to handle real-world scenarios, considering
+          variations in </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >lighting conditions</span
+        ><span style="font-family: Calibri; font-size: 12pt"> and </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >image angles</span
+        ><span style="font-family: Calibri; font-size: 12pt">. </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Optimize the model for efficiency, enabling quick and accurate
+          predictions.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Expected Outcomes</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >A trained machine learning model capable of accurately classifying
+          vegetable images.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Improved efficiency in crop monitoring for farmers, leading to
+          timely</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >intervention in case of plant diseases or issues.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Enhanced user experience for chefs, providing a tool for quick and
+          accurate vegetable identification for recipe planning.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >A foundation for future developments in image classification,
+          potentially expanding to other food categories.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Significance of the Project</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The successful implementation of this project holds the potential to
+          revolutionize how we interact with vegetables in various fields. From
+          precision agriculture to culinary arts, accurate vegetable image
+          classification can pave the way for innovative applications that
+          positively impact different aspects of our daily lives.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Data Understanding</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In this dataset there are 20,000 images from 15 classes, including
+          Bean, Bitter Gourd, Bottle Gourd, Brinjal, Broccoli, Cabbage,
+          Capsicum, Carrot, Cauliflower, Cucumber, Papaya, Potato, Pumpkin,
+          Radish, Tomato. Each class has an equal proportion. The image
+          resolution is 224×224 and in *.jpg format and the color channel </span
+        ><span style="font-family: Calibri; font-size: 12pt">is</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          3. These pixels are the features we will use to do the image
+          classification. We visualized a random sample in each class to check
+          the quality of the image data:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project4_img/1.png"
+          width="338"
+          height="289"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">Data Source: </span
+        ><a
+          style="color: #4472c4"
+          href="https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset"
+          ><span
+            style="
+              color: #4472c4;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-style: italic;
+              text-decoration: underline;
+            "
+            >https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset</span
+          ></a
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DATA PREPARATION</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We split our dataset into three parts, where 70%(approx.) for
+          training and 15%(approx.) for testing, and the rest 15%(approx.) for
+          validation.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Training Data:</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >15,000 images for 15 classes (1000 images each)</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Size of each image is 224*224 and images are in *.jpg format.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Validation Data:</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >3,000 images for 15 classes (200 images each)</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Size of each image is 224*224 and images are in *.jpg format.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Test Data:</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >3,000 images for 15 classes (200 images each)</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Size of each image is 224*224 and images are in *.jpg format.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >To better prepare image datasets for modelling, we set the target
+          height and width (224*224) for images and applied preprocessing
+          transformations including resizing and normalization. We made sure
+          that the pixel values are scaled to have a mean of 0.5 and a standard
+          deviation of 0.5 across each color channel. This helped create a
+          standardized and stable input for the neural network, promoting better
+          training and generalization performance.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We also created </span
+        ><span style="font-family: Calibri; font-size: 12pt">ImageFolder</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          datasets for training, validation, and testing and employed the </span
+        ><span style="font-family: Calibri; font-size: 12pt">DataLoader</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          to efficiently load batches of data during model training. We chose
+          the batch size to be 128 and turned on the shuffle.</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Now out data is ready for modelling.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MODELING</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Model Structure</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Based on the property of our problem, we chose the following models
+          and hyperparameters:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >1. Multi-layer Perceptron Base Model:</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >There are 3 fully connected layers. The input layer has 224*224*3
+          neurons, connecting to a hidden layer with 1024 neurons, followed by
+          another hidden layer with 256 neurons, and an output layer with 15
+          neurons. </span
+        ><span style="font-family: Calibri; font-size: 12pt">ReLU</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          activation functions are applied to the hidden layers while log-</span
+        ><span style="font-family: Calibri; font-size: 12pt">softmax</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          activation is applied to output layer for classification.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <img
+          src="./project4_img/2.png"
+          width="407"
+          height="164"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >2. Simple CNN Model:</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The CNN model has one convolutional layer, max-pooling, and two fully
+          connected layers. The convolutional layer has 3 input channels, 16
+          output channels, and a kernel size of 3x3 with padding. Max-pooling
+          reduces the spatial dimensions by half. The first fully connected
+          layer has 112*112*16 input features, connecting to a hidden layer of
+          size 256, followed by an output layer with the specified number of
+          classes. </span
+        ><span style="font-family: Calibri; font-size: 12pt">ReLU</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          activation functions are used in the convolutional and hidden layers,
+          and dropout with a probability of 0.25 is applied for regularization.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <img
+          src="./project4_img/3.png"
+          width="494"
+          height="171"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >3. VGG16 Model</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The VGG16 model is valuable for image classification due to its deep
+          architecture and proven performance. With 16 weight layers, including
+          13 convolutional layers, it captures intricate hierarchical features
+          in images, allowing it to recognize complex patterns and shapes. The
+          use of small 3x3 convolutional filters throughout the network promotes
+          more effective feature learning. Therefore, we chose to use VGG16 as
+          one of our models which strikes a balance between model complexity and
+          interpretability.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >4. </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >ResNet</span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+          Model</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">The </span
+        ><span style="font-family: Calibri; font-size: 12pt">ResNet</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          model is also one popular model for image classification since it
+          enables the training of very deep architectures. We initialized a
+          pre-trained ResNet18 model and adapted it for CIFAR-</span
+        ><span style="font-family: Calibri; font-size: 12pt">2</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          classification by modifying the output layer to match the number of
+          categories. This leveraged the pre-trained weights for feature
+          extraction, allowing efficient transfer learning and improved
+          convergence.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Hyperparameters Selection</span
+        >
+      </p>
+
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The following table lists the hyperparameters we chose:</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <img
+          src="./project4_img/4.png"
+          width="478"
+          height="210"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The loss function we used are </span
+        ><span style="font-family: Calibri; font-size: 12pt">NLLLoss</span
+        ><span style="font-family: Calibri; font-size: 12pt"> and </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >CrossEntropyLoss</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >, which are applied for classification. And we chose Adam and SGD for
+          optimizers. Due to the large pixel size and</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >numerous features of these images, our training process is very slow.
+          Therefore, we chose 10 as the number of epochs to mitigate the
+          prolonged training time.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Pros and Cons</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >1. Multi-layer Perceptron (MLP) Base Model</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Pros: easy to understand; fast training speed.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Cons: limited capacity (hard to capture complex hierarchical
+          features); lack of spatial information (ignore spatial relationships
+          in pixel values).</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >2. CNN Model</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Pros: better feature learning; moderate complexity (balance between
+          simplicity and capacity).</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Cons: slow training speed; limited depth.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >3. VGG16 Model</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Pros: hierarchical features (deep architecture captures intricate
+          hierarchical features); transfer learning (pre-trained on large
+          datasets, facilitating transfer learning).</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Cons: higher computational cost for deeper architecture; likely to
+          overfit.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >4. </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >ResNet</span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+          Model</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Pros: deep residual learning (address vanishing gradient problem,
+          allowing deeper architectures); transfer learning.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Cons: high computational cost; long training time.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >IMPLEMENTATION</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The challenge that we met in implementing is that the accuracy we got
+          from simple CNN model is relatively low. We believed this was because
+          the Simple CNN model has only one convolutional layer and pooling
+          layer. Therefore, we are attempting to increase the depth of the
+          network. Here is our improved CNN model:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project4_img/5.png"
+          width="466"
+          height="279"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >RESULTS </span
+        ><span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >and EVALU</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >ATION</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Training Results</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We trained the above 5 models and recorded all the training losses
+          and validation losses for each epoch. We chose validation loss and
+          classification accuracy as our metrics to measure the performance of
+          models. Here are the results:</span
+        >
+      </p>
+      <ol type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Multi-layer Perceptron Base Model:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Despite its simplicity, the simple Multi-layer Perceptron Model
+          exhibits challenges in accurately classifying certain items, resulting
+          in a test accuracy of 66.70%.</span
+        >
+      </p>
+      <ol start="2" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Simple CNN Model:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The CNN model demonstrates strong performance on the dataset,
+          achieving a commendable 90% test accuracy. However, it seems to be
+          overfitting after epoch 5.</span
+        >
+      </p>
+      <ol start="3" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Improved CNN Model:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Enhancements to the model, including increased depth, the
+          incorporation of Batch Normalization, and Dropout layers, lead to
+          remarkable improvements. The improved CNN model achieves a test
+          accuracy exceeding 97%.
+        </span>
+      </p>
+      <ol start="4" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >VGG16 Model</span
+          ><span
+            style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >It generated the highest test accuracy at 99.93%. The training loss
+          and validation loss path are almost overlapped and both close to 0,
+          which also indicates that it performs quite well.
+        </span>
+      </p>
+      <ol start="5" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >ResNet</span
+          ><span
+            style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >
+            Model:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >It also generated a </span
+        ><span style="font-family: Calibri; font-size: 12pt">high test</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          accuracy at 99.87%. However, the validation loss fluctuates
+          significantly and does not converge. It might be the result of high
+          learning rate or overfitting.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Data Visualization</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project4_img/6.png"
+          width="600"
+          height="380"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Test the Trained Network</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Based on the above result, we chose </span
+        ><span style="font-family: Calibri; font-size: 12pt">ResNet</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          Model and VGG16 Model as our final models since they generated highest
+          accuracy. Here are the results of testing:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project4_img/7.png"
+          width="554"
+          height="155"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 10pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DEPLOYMENT</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Application</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Now the model can do the image classification for vegetables with an
+          accuracy higher than 99%. </span
+        ><br /><span style="font-family: Calibri; font-size: 12pt"
+          >In business scenarios, it is advantageous for enhancing self-checkout
+          machines: retailers can provide a faster and more efficient checkout
+          experience. Customers only need to place the vegetables on the
+          scanner, and the system will automatically recognize and calculate the
+          price, reducing manual intervention in the checkout process. This can
+          lead to a reduction in operational costs, decrease human errors, and
+          enhance the overall customer experience. Moreover, through the
+          vegetable recognition model, businesses can collect data on purchasing
+          behavior. This data can be utilized to analyze sales trends, optimize
+          inventory management, and even personalize product recommendations.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Ethical Consideration</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >An essential ethical concern lies in privacy concerns, specifically
+          regarding the collection of data on purchasing behavior. Clear
+          communication with customers about data usage and obtaining consent is
+          paramount. Another ethical consideration is Job Displacement: the
+          introduction of automation technologies, like self-checkout machines,
+          could result in the displacement of traditional cashier roles.
+          Businesses need to assess the social and economic impacts of these
+          changes and proactively seek ways to </span
+        ><span style="font-family: Calibri; font-size: 12pt">retrain</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          or transition affected employees. These ethical considerations are
+          critical for ensuring responsible and equitable practices in the
+          deployment of technologies in retail environments.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Related Risks</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The model is not 100% correct. As the model keeps training more data,
+          some biases would also arise. If machine misidentification leads to
+          customer losses and subsequent complaints, companies may face legal
+          disputes. Regularly auditing and </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >evaluating the model's performance is crucial for businesses to
+          address and mitigate biases.</span
+        >
+      </p>
+    </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

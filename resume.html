@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .resume {
+        width: 66%;
+        margin-bottom: 10em;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .bg-custom {
+      background-image: url("your-background-image-url.jpg");
+      background-size: cover;
+      color: rgb(190, 143, 143);
+    }
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 3em;
+    }
+    .custom-border {
+      border-width: 5px !important; /* Adjust the border width as needed */
+      border-color: rgb(
+        143,
+        123,
+        123
+      ) !important; /* Optional: change the border color */
+      border-radius: 20px;
+    }
+    .flex-container {
+        display: flex;
+        align-items: center; /* 如果你想要垂直居中对齐 */
+    }
+  </style>
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: rgb(224, 143, 188);">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link" href="./index.html" style = "color: white;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown" style = "color: white;"
+              >Project</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./project1.html"
+                  >CFA Research Challenge : Stock Price Prediction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project2.html"
+                  >Portfolio Analysis (Python, Pandas)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project3.html"
+                  >House price prediction (MLP)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project4.html"
+                  >Image Classification (CNN)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project5.html"
+                  >Collaborative Filtering (Deep Learning)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project6.html"
+                  >Ruin Probability Prediction (R)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project7.html"
+                  >Health status prediction (R)</a
+                >
+              </li>
+                            <!-- <li>
+                <a class="dropdown-item" href="./project8.html"
+                  >Data Visualization (Tableau)</a
+                >
+              </li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html" style = "color: white;">Resume</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-primary" type="button" style = "background-color: rgb(125, 145, 211); border: none;">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+    <div style = "margin-bottom: 5em;"></div>
+    
+    <div class = "container resume">
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 18pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >EDUCATION</span
+          >
+        </p>
+        <!-- <p style="margin: 0em;">
+          <img
+            src="./resume_img/1.png"
+            width="2"
+            height="2"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+              margin-top: 0;
+            "
+          />
+        </p> -->
+        <!-- <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p> -->
+
+
+
+        <div class="container" style = "display: flex; margin-top: 10pt;">
+          <div class="image-container" style = "flex: auto auto; margin-right: 12pt; margin-top: 0; align-self: center;">
+            <img src="./resume_img/1.png" width="185" height="185" alt="Fuqua School of Business - Wikipedia" style = "margin-top: 0;">
+          </div>
+          <div class="text-container" style = "flex: 1; text-align: justify;">
+            <p style="margin-top: 0; margin-bottom: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt; font-weight: bold;">
+                DUKE UNIVERSITY, THE FUQUA SCHOOL OF BUSINESS
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+                Master of Science in Quantitative Management: Business Analytics, Risk Track (STEM)
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                July 2023 – May 2024
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">GPA 3.85</span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                <span style = "font-weight: bold;">Data Science Coursework</span>: Data Infrastructure (SQL), Data Science for Business (Machine Learning), Data Visualization (Tableau), Decision Analytics & Modeling, Applied Probability and Statistics
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                <span style = "font-weight: bold;">Domain Coursework</span>: Managing Operational and Informational Risks, Fraud Analytics, Managing Cybersecurity Risk
+              </span>
+            </p>
+          </div>
+        </div>
+
+
+        <div class="container" style="display: flex; margin-top: 10pt;">
+          <div class="image-container" style="flex: auto auto; margin-right: 12pt; margin-top: 0; align-self: center;">
+            <img src="./resume_img/2.png" width="185" height="147" alt="Chinese University of Hong Kong - Wikipedia" style="margin-top: 1.0rem;">
+          </div>
+          <div class="text-container" style="flex: 1; text-align: justify;">
+            <p style="margin-top: 0; margin-bottom: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt; font-weight: bold;">
+                CHINESE UNIVERSITY OF HONG KONG, SCHOOL OF MANAGEMENT AND ECONOMICS
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+                Bachelor of Business Administration, Finance
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                September 2019 – May 2023
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">GPA 3.6</span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                Dean’s List, Student Ambassador of Admission Consulting Service Group
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                Selected Coursework: Data Analytics, Advanced Statistical Computing, IT in Business Applications, Investment Analysis
+              </span>
+            </p>
+          </div>
+        </div>
+        
+       
+
+
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 18pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >
+            EXPERIENCE
+          </span>
+        </p>
+
+        <div class="container" style="display: flex; margin-top: 10pt;">
+          <div class="image-container" style="flex: auto auto; margin-right: 12pt; margin-top: 0; align-self: center;">
+            <img src="./resume_img/3.png" width="185" height="145" alt="京东| CNCF" style="margin-top: 1.8rem;">
+          </div>
+          <div class="text-container" style="flex: 1; text-align: justify;">
+            <p style="margin-top: 0; margin-bottom: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt; font-weight: bold;">
+                JD TECHNOLOGY, Financial Technology Department
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+                Financial Product Risk Analytics Intern
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                Strategized operation of financial product “JD Baitiao,” with ~100K monthly active users, conducting risk assessment based on customers' credit histories and trading volume with MySQL.
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                Refined decision tree model for risk assessment, identifying new effective variables with R, improving model test accuracy by 1.5%, set for official deployment after evaluation.
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                Conducted and delivered weekly dynamic performance reports on customer segmentation, operational strategies, and suggestions for product development, contributing to a 95% year-on-year increase in market penetration rate during anniversary promotion.
+              </span>
+            </p>
+          </div>
+        </div>
+        
+
+
+
+
+        <div class="container" style="display: flex; margin-top: 20pt;">
+          <div class="image-container" style="flex: auto auto; margin-right: 12pt; margin-top: 0; align-self: center;">
+            <img src="./resume_img/4.jpg" width="185" alt="" style="margin-top: 0.8rem;">
+          </div>
+          <div class="text-container" style="flex: 1; text-align: justify;">
+            <p style="margin-top: 0; margin-bottom: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt; font-weight: bold;">
+                PAN-CHINA CERTIFIED PUBLIC ACCOUNTANTS, Audit Department
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+                Audit Analyst
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                Engaged in five annual audit projects, formulating audit documentation for several subjects including account receivable and account payable using Microsoft Excel.
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                Analyzed and proofread company financial statements including bank deposits, sales expenses, and internal and external revenues; investigated suspicious transactions in company financial records based on risk models, including anomaly detection and internal control assessment.
+              </span>
+            </p>
+            <p style="margin: 0; text-align: justify;">
+              <span style="font-family: Calibri; font-size: 12pt">
+                <span style="font-family: Calibri; font-size: 12pt">•</span>
+                Conducted due diligence for an IPO project through onsite investigation.
+              </span>
+            </p>
+          </div>
+        </div>
+        
+
+
+
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >NEW ORIENTAL EDUCATION &amp; TECHNOLOGY GROUP</span
+          >
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Teaching Assistant
+          </span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: Calibri; font-size: 12pt">•</span
+          ><span
+            style="width: 15.02pt; text-indent: 0pt; display: inline-block"
+          ></span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Collaborated with teachers to prepare learning materials and track
+            student performance.</span
+          ><span
+            style="width: 6.47pt; text-indent: 0pt; display: inline-block"
+          ></span
+          >
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 18pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >TECHNICAL CAPABILITIES
+            </span
+          >
+        </p>
+        <p style="margin: 0; text-align: justify; margin-top: 0.3rem;">
+          <span style="font-family: Calibri; font-size: 12pt">
+            <span style="font-family: Calibri; font-size: 12pt">•</span>
+            <span style = "font-weight: bold;">Technical Skills</span>: Python (numpy, pandas, Jupyter notebook, Google Colab), R, MySQL, Tableau, Power BI, MATLAB, Stata, Advanced Excel (Tree Plan, Crystal Ball, Vlookup, Pivot tables), Advanced PowerPoint
+          </span>
+          <p style="margin: 0; text-align: justify; margin-top: 0.6rem;">
+            <span style="font-family: Calibri; font-size: 12pt">
+              <span style="font-family: Calibri; font-size: 12pt">•</span>
+              <span style = "font-weight: bold;">Statistics and Modeling</span>:  Data Manipulation, Statistical Analysis, A/B Testing, Stochastic Processes, Decision Trees, Predictive Analysis (linear, quantile and logistic regression), Hierarchical Clustering, PCA, K-means, Lasso, SVM, Multilayer Perceptron
+            </span>
+          </p>
+        </p>
+      </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

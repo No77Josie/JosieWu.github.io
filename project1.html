@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .report {
+        width: 60%;
+        margin-bottom: 10em;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    .bg-custom {
+      background-image: url("your-background-image-url.jpg");
+      background-size: cover;
+      color: rgb(190, 143, 143);
+    }
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 3em;
+    }
+    .custom-border {
+      border-width: 5px !important; /* Adjust the border width as needed */
+      border-color: rgb(
+        143,
+        123,
+        123
+      ) !important; /* Optional: change the border color */
+      border-radius: 20px;
+    }
+  </style>
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: rgb(224, 143, 188);">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link" href="./index.html" style = "color: white;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown" style = "color: white;"
+              >Project</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./project1.html"
+                  >CFA Research Challenge : Stock Price Prediction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project2.html"
+                  >Portfolio Analysis (Python, Pandas)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project3.html"
+                  >House price prediction (MLP)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project4.html"
+                  >Image Classification (CNN)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project5.html"
+                  >Collaborative Filtering (Deep Learning)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project6.html"
+                  >Ruin Probability Prediction (R)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project7.html"
+                  >Health status prediction (R)</a
+                >
+              </li>
+              <!--               <li>
+                <a class="dropdown-item" href="./project8.html"
+                  >Data Visualization (Tableau)</a
+                >
+              </li> --> 
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html" style = "color: white;">Resume</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-primary" type="button" style = "background-color: rgb(125, 145, 211); border: none;">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+    <div style = "margin-bottom: 5em;"></div>
+    <div class = "container report">
+        <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
+          <img
+            src="./project1_img/Picture1.png"
+            width="554"
+            height="113"
+            alt=""
+            style="
+              -aw-left-pos: 0.3pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 9.4pt;
+              -aw-wrap-type: topbottom;
+            "
+          /><br />
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >C</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >FA Institute Research Challenge</span
+          >
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >Stock Price Prediction for </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >BioTechnology</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+          >
+            Co., Ltd(688363.SH)</span
+          >
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >INVESTMENT SUMMARY</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Since going public on the Science and Technology Innovation Board of
+            the Shanghai Stock Exchange in 2019, recent years have witnessed a
+            rapid progress of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            business performances together with its stock price. As the world’s
+            leading enterprise in the hyaluronic acid (HA) production currently, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            tends to be lucrative and promising for investors.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >We issue a buy recommendation on </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            with an expecting target price 203.99 CNY on 2022-2-28. To be
+            specific, if an investor who takes our recommendation buys </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            at current price 161.25 CNY (2021-11- 30 close) and sells it about
+            three months later, a 26.51% profit return is expected to achieve
+            under the assumption that the market have exploited most of its
+            intrinsic value. The investment logic is concluded based on the
+            following key ideas:
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >1) Integrated industrial chain provides with robust fundamental.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >2) Sustainable financial growth and low financial risk indicate a
+            potential future development</span
+          ><span style="font-family: Calibri; font-size: 12pt">. </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >3) A valuation result at 203.99 CNY based on </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >ReOI</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+          >
+            model indicates that </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Bloomage</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+          >
+          </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >BioTech</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+          >
+            is currently underpriced.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >4) The convincing validation towards the valuation has been conducted
+            through sensitivity analysis and Monte Carlo simulation.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >BUSINESS DESCRIPTION</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Business Segments</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The revenue structure of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is composed of four segments: functional skin care products (51.12%),
+            HA raw materials (26.70%), medical terminal products (21.88%) and
+            other products (0.27%). Compared to last year’s revenue structure, the
+            revenue from functional skin care products increased by 112.19% and
+            achieved CNY1.346B. This explosive growth resulted from the company's
+            aggressive online </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >marketing strategy. Due to COVID-19, revenue from raw materials
+            decreased by 7.55%. The revenue of medical </span
+          ><img
+            src="./project1_img/Picture2.png"
+            width="240"
+            height="270"
+            alt=""
+            style="
+              -aw-left-pos: 129.76pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 40.4pt;
+              -aw-wrap-type: topbottom;
+            "
+          /><br /><span style="font-family: Calibri; font-size: 12pt"
+            >terminal products increased by 17.79%, showing a potential growth
+            trend.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Industrial Chain Management</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The industry chain of medical cosmetology mainly includes three
+            links: the upstream is raw material and equipment suppliers, the
+            midstream is service agencies, and the downstream is customer
+            acquisition platforms. As the world's largest supplier of HA raw
+            materials, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            builds an industrial chain that contains research and development, </span
+          ><span style="font-family: Calibri; font-size: 12pt">production</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            and sales of HA products.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >INDUSTRY OVERVIEW</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Raw material Market</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is the worldwide largest HA production enterprise, whose sales
+            accounts for 36%. Other leading enterprises include Focus Chem, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Fufeng</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt"> and </span
+          ><span style="font-family: Calibri; font-size: 12pt">LookChem</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >, whose market share are 12%, 10% and 8% (Fig.3), respectively.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Terminal Product Market of Medical Cosmetology</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >In China, the market size of medical cosmetology reaches CNY 197.5
+            billion with CAGR of 23.38% from 2012 to 2020. The permeability rate
+            in China is only 3.6% in 2019, which is greatly less than other
+            developed country, such as America and Korea, whose permeability rate
+            are 16.6% and 20.5%, respectively (Fig. 4). Data from The New Oxygen
+            Data Institute showed that in 2020, the number of medical and beauty
+            consumers in China reached 15.2 million, with a year-on- year increase
+            of 35.7%. By April 2021, the number of medical beauty users in China
+            has reached 18.073 million, and medical beauty consumption continues
+            to be hot. Therefore, we expect that the market size will increase to
+            CNY 311.5 billion in 2023 (Fig. 5). Because the popularity and price
+            of domestic HA are relatively low, Chinese HA medical cosmetology
+            market is dominated by well-known foreign brand. In 2019, domestic HA
+            product only accounted for 28% of the market share (Fig.6).
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >High Entering Technology Barriers</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >In raw material market, for pharmaceutical level HA raw material,
+            there is a high requirement for the purity index of endotoxin,
+            protein, nucleic acid and colony. For the terminal product, especially
+            the injection medical cosmetology products, there </span
+          ><span style="font-family: Calibri; font-size: 12pt">are have</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            high research and development costs and technical threshold. Take
+            terminal production leading enterprises as an example, the research
+            &amp; development personnel of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Haohai</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            and IMEIK take up 16.8%, 19.7% and 22.9%, respectively. And they have
+            also invested 0.14, 1.26 and 0.59 million, respectively, into research
+            &amp; development.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Strong supervision benefits the development of leading
+            enterprises</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Starting from 2002, China has begun to intensify supervision on
+            medical cosmetology industry and successively published dozens of
+            regulations to </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >standardize for medical cosmetology equipment and drugs. For
+            pharmaceutical raw material manufacturers, to obtain the production
+            approval, they need to acquire different qualifications and the
+            overall process will take 2 to 5 years. </span
+          ><img
+            src="./project1_img/Picture3.png"
+            width="500"
+            height="400"
+            alt=""
+            style="
+              -aw-left-pos: 45.77pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 53.72pt;
+              -aw-wrap-type: topbottom;
+            "
+          /><span style="font-family: Calibri; font-size: 12pt"
+            >
+          </span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >COMPETITOR POSITIONING</span
+          >
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+        </p>
+        <span style="font-family: Calibri; font-size: 12pt"
+            >Based on the similar focus on HA production and the high net profits,
+            IMEIK and </span
+          ><span style="font-family: Calibri; font-size: 12pt">Haohai</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            Biological Technology are considered as the main competitors of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            to conduct the following analyses. Compared with other competitors, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is very profitable with extremely high operating income and relatively
+            steady rate of growth. Facing the impact COVID-19, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            chooses to stimulate the development of C-end business, which helps it
+            maintain a high gross profit in the fierce market competition. At the
+            same time, IMEIK still focused on the development of B-end products
+            while </span
+          ><span style="font-family: Calibri; font-size: 12pt">Haohai</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            was seriously affected by the epidemic (Fig. 7). </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The high profitability and stability of it also benefit from its
+            stronger research and development capabilities and expansion of the
+            functional food sector.</span
+          >
+          <p style="background-color: #ffffff; margin: 5pt 0pt">
+            <img
+              src="./project1_img/Picture4.png"
+              width="231"
+              height="186"
+              alt=""
+              style="
+                -aw-left-pos: 109.5pt;
+                -aw-rel-hpos: column;
+                -aw-rel-vpos: paragraph;
+                -aw-top-pos: 149.91pt;
+                -aw-wrap-type: topbottom;
+              "
+            /><br />
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >FINANCIAL ANALYSIS</span
+          >
+        </p>
+
+        <p style="background-color: #ffffff; margin: 7pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Sustainable revenue growth driven by reasonable layout of three
+            business lines</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            has an industry leading position in HA manufacturing, so until 2019,
+            raw material manufacturing and sales are the main business, which
+            accounts for 40.35% of total sales (Fig. 8) In 2020, functional skin
+            care products surpassed raw material to be </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            main business segment at a revenue contribution rate of 51.12% (Fig.
+            8). This line generated 1.35 billion yuan of revenue with an extremely
+            high CAGR 114%, indicating the functional skin care products line is
+            enriching the single raw material sales line and becoming a new sales
+            growth point. Although the proportion of raw material business line
+            declines drastically and medical terminal products line maintains a
+            low business percentage of 24%, they keep a stable growth of revenue
+            with CAGR 11.3%, 31.8% respectively. At the same time, recent
+            increased supervision of internet, education and medical beauty
+            industries led by government policy may slow down </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            revenue growth level. However, according to the data above, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            has turned to the C-end as a new growing point to better adapt to the
+            industry standardization trend. Thus, we expect </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            revenue to grow 21% faster than the industry average growth rate in
+            the following three years, which equals to 23.38%. To sum up, we see a
+            great overall development power.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 7pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >High gross margin attributed to advanced technology</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The gross margin of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            maintains at a fairly high level, with an average of 78.76% in the
+            past five years (Fig. 9) It is attributed to its advanced technology
+            and professional production line in HA manufacture with a low COGS.
+            However, its profit is relatively low, but is still competitive to </span
+          ><span style="font-family: Calibri; font-size: 12pt">Haohai</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt"> and </span
+          ><span style="font-family: Calibri; font-size: 12pt">Imeik</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >. We explore the principal factor. Biopharmaceutical industry is
+            technology intensive. Its product development cycle is long and
+            R&amp;D investment will be no immediate result. Thus, in some years,
+            like 2017 and 2020, the investment expenses didn’t pay back yet, so
+            the ROE is lower. It is also worth noting that </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            total R&amp;D investment in 2020 is NCY 141.16 million according to
+            its annual report. The company counted all of it as expensed R&amp;D
+            and the capitalized R&amp;D is counted 0, which significantly declined
+            profit for the year.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Continuous improvement of debt solvency</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The current ratio of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            raised from 2.56 in 2016 to 6.63 in 2020, and the quick ratio from
+            2.14 to 4.59. According to the data, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            short-term solvency improved in the past 5 years. The company has a
+            low risk of short-term debt repayment crisis. As for long-term
+            solvency, we see the Debt-Asset ratio of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            in 2019 decreased significantly because of the substantial increase in
+            assets duo to the listing (Fig. 10) However, the ratio picked up in
+            2020, larger than that of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Haohai</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt"> and </span
+          ><span style="font-family: Calibri; font-size: 12pt">Imeik</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >. It may be caused by the industry regulatory policy and increased
+            R&amp;D investment in order to conform to the market such as HA </span
+          ><span style="font-family: Calibri; font-size: 12pt">food, but</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            compared with the industry average level of Debt-Asset ratio around
+            60%, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is still at a fairly low level.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Insufficient R&amp;D investment may block future transactions in
+            international competition</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            has been committed to create a </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTechnology</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            company driven by R&amp;D since its foundation. It constantly
+            increased R&amp;D investment in the past three years (Fig. 11). By
+            2020, it has employed 377 researchers in total and patented 289
+            inventions. In the domestic market, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            has been in an industry leading position. However, for foreign
+            biopharmaceutical enterprises of the same scale, the percentage of
+            R&amp;D investment to operating revenue is about 8%, which is much
+            higher than </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            proportion.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project1_img/Picture5.png"
+            width="600"
+            height="450"
+            alt=""
+            style="
+              -aw-left-pos: 26.83pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 3.15pt;
+              -aw-wrap-type: topbottom;
+            "
+          /><br />
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >VALUATION</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >According to the result of our valuation model, the BUY
+            recommendation is put forward on </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            with a target price of 203.99 CNY on Feb. 28</span
+          ><span style="font-family: Calibri; font-size: 7pt; vertical-align: 3pt"
+            >th</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >, 2021. Compared with the closing price on Nov. 30</span
+          ><span style="font-family: Calibri; font-size: 7pt; vertical-align: 3pt"
+            >th</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >, 2021, which is 161.25 CNY, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            has a 26.51% upside of price in the following 3 months. Due to our
+            relatively conservative assumptions, the valuated price is lower than
+            the one which is more generally accepted by the institutions. We still
+            propose a BUY recommendation based on its huge growth space. We use </span
+          ><span style="font-family: Calibri; font-size: 12pt">ReOI</span
+          ><span style="font-family: Calibri; font-size: 12pt"> model (</span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is expected to generate stable residual earnings in the future) to
+            value </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            with auxiliary P/E method and quantitative analysis verifying our
+            valuation (Fig. 12).
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >I. Key Assumptions: the adjusted discount rate.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >The discount rate is calculated by WACC model formulated as
+            below:</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt; text-align: center">
+          <span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Discount Rate = WACC = D/V * Rd * (1 - T) + E/V * Re</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >The Equity-to-Debt ratio is calculated based on the Balance Sheet on
+            Dec 31</span
+          ><span style="font-family: Calibri; font-size: 7pt; vertical-align: 3pt"
+            >st</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >, 2020. The cost of debt is estimated based on the yield to maturity
+            on Nov. 30</span
+          ><span style="font-family: Calibri; font-size: 7pt; vertical-align: 3pt"
+            >th</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >, 2021, of a listed long-term bond of a comparable corporation, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Lancy</span
+          ><span style="font-family: Calibri; font-size: 12pt"> (</span
+          ><span style="font-family: Calibri; font-size: 12pt">Lancy</span
+          ><span style="font-family: Calibri; font-size: 12pt"> and </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            are in the same industry with similar business model). The cost of
+            equity is estimated by CAPM which takes the risk premium into account
+            and is in accordance with the investors’ consideration of risk
+            compensation: (a) The market return is calculated by the CAGR of CSI
+            300 in the past two years which can reflect market return. (b) Beta is
+            calculated based on the returns of CSI 300 and </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            in the past two years. (c) The risk-free rate is represented by the
+            weighted average 1-year treasury bond interest rate in 2021. The tax </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >rate is calculated using the average tax rate in the past 5 report
+            periods. Eventually, we can get a discount rate 14.11% (Fig. 14).
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >II. Estimating the Operating Income in the next 5 years
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >(a) Default assumptions by institutions.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >The industry net profit margin can be regarded as the benchmark of
+            the corporation’s net profit margin indicator. The Bio-pharmaceutical
+            industry has a net profit margin of 9.04% in 2019 (Since the
+            production of Bio- pharmaceutical industry in 2020 was seriously
+            affected by the epidemic, where the financial data suffered from a
+            large deviation). Besides, the corporation’s annual net profit growth
+            rate is publicly accepted to approach Bio-pharmaceutical industry’s
+            compound annual net profit growth rate.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >(b) Adjustments for existing assumptions.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">Because </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is one of the leading enterprises of Bio- pharmaceutical industry, it
+            far outperforms the industry average. In addition, based on our
+            profound insights from the industry, competitors, and the corporation
+            itself, we make some adjustment to the previous corporation’s growth
+            assumptions.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >The future operating income is mainly based on </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            future business plan and current market pattern. The compound annual
+            growth rate of revenue from 2018 to 2020 is 44.37%. Because of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            comparative advantaged among its main competitors, including high
+            market share of the global HA market and abundant investment in
+            R&amp;D, we assume </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            will maintain a stable revenue growth rate at 44.37% in the following
+            3 years. The revenue for the first half year of 2021 is
+            1,936,614,650.94 which is relatively close to the estimation and can
+            be considered as a verification of the assumption. The average net
+            profit margin in the past three years is 23.70%. Combined with the
+            industry average, we have made a compromise. Based on the advantages
+            (e.g., high entry barriers and High </span
+          ><span style="font-family: Calibri; font-size: 12pt">R</span
+          ><span style="font-family: Calibri; font-size: 12pt">&amp;</span
+          ><span style="font-family: Calibri; font-size: 12pt">D</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            capability and the disadvantages (e.g., High market saturation), we
+            assume the net profit margin will maintain at 19.37% in the following
+            5 years.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >The compound annual net profit growth rate of the Bio-pharmaceutical
+            industry in the past 10 years is 10.46%. The long-term development
+            trend of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            should have been bound to converge with the development trend of the
+            bio-pharmaceutical industry in the long run. But </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is also an untypical medical beauty company High-tech content. The
+            entry barrier of medical beauty industry is relatively low. Thus, the
+            current situation of medical beauty industry is that head effect is
+            not greatly significant with high diversification of numerous
+            small-scale medical beauty companies. Medical beauty industry also has
+            a high market saturation rate, so the traditional 2C business has
+            little room for growth. Benefitting from the national policy of
+            medical beauty industry rectification and reform released several
+            months ago, the phenomenon of non-standardized industry will be
+            mitigated, and the development of leading enterprises will be
+            supported. </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is expected to gradually increase its market share in the medical
+            beauty industry. In addition, according to the </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            current business pattern, the 2B business has begun to take shape and
+            had a good development trend. It has huge growth potential in the
+            future to break the development </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >bottleneck of the traditional medical beauty industry. Therefore, we
+            still assume </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s net profit will maintain a stable growth rate at 10.46% after 3
+            years.</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><img
+            src="./project1_img/Picture6.png"
+            width="600"
+            height="380"
+            alt=""
+            style="
+              -aw-left-pos: 0.3pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 38.5pt;
+              -aw-wrap-type: topbottom;
+            "
+          /><br /><span style="font-family: Calibri; font-size: 12pt"
+            >
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >III. </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >ReOI</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+          >
+            Results.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Based on the formulas:
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt; text-align: center">
+          <span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >NOA</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 7pt;
+              font-weight: bold;
+              vertical-align: -2pt;
+            "
+            >t </span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >= NOA</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 7pt;
+              font-weight: bold;
+              vertical-align: -2pt;
+            "
+            >t-1 </span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >* (1 + RNOA) = NOA</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 7pt;
+              font-weight: bold;
+              vertical-align: -2pt;
+            "
+            >t-1 </span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >* (1 + OI</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 7pt;
+              font-weight: bold;
+              vertical-align: -2pt;
+            "
+            >t</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >/ NOA</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 7pt;
+              font-weight: bold;
+              vertical-align: -2pt;
+            "
+            >t-1</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >)</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt; text-align: center">
+          <span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >ReOI</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 7pt;
+              font-weight: bold;
+              vertical-align: -2pt;
+            "
+            >t </span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >= OI</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 7pt;
+              font-weight: bold;
+              vertical-align: -2pt;
+            "
+            >t-1 </span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >– (ρ – 1) * NOA</span
+          ><span
+            style="
+              color: #006dbf;
+              font-family: Calibri;
+              font-size: 7pt;
+              font-weight: bold;
+              vertical-align: -2pt;
+            "
+            >t-1</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project1_img/Picture7.png"
+            width="300"
+            height="250"
+            alt=""
+            style="
+              -aw-left-pos: 123.46pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 84.48pt;
+              -aw-wrap-type: topbottom;
+            "
+          /><br /><span style="font-family: Calibri; font-size: 12pt"
+            >Using the updated assumptions above, we apply the </span
+          ><span style="font-family: Calibri; font-size: 12pt">ReOI</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            model to calculate the target price, which is equal to 230.42 CNY
+            (Fig. 14). This target price suggests that by the end of February of
+            2022, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            will earn a 26.51% return if it is relatively </span
+          ><span style="font-family: Calibri; font-size: 12pt">fairly priced</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >. This target price is lower than the generally accepted price 239.30
+            CNY by institutions, however, still indicating a high profit margin
+            with 3 months. Therefore, we put forward a BUY recommendation.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >VERIFICATION OF THE TARGET PRICE</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >I. Robustness of </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >ReOI</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+          >
+            Model.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">T</span
+          ><span style="font-family: Calibri; font-size: 12pt">he </span
+          ><span style="font-family: Calibri; font-size: 12pt">ReOI</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            model heavily relies on the estimated discount rate and net profit
+            growth rate. Therefore, we think that it is necessary to carry out a
+            sensitivity analysis on these two variables. Based on our relatively
+            solid assumptions, the adjustment range of these two variables is
+            slight in the sensitivity analysis. In the most conservative scenario,
+            we still expect a 17.08% upside of price in the following 3 months
+            while 37.56% for the most optimistic scenario.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >II. Monte Carlo Simulation.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project1_img/Picture8.png"
+            width="500"
+            height="400"
+            alt=""
+            style="
+              -aw-left-pos: 65.98pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 116.01pt;
+              -aw-wrap-type: topbottom;
+            "
+          /><br /><span style="font-family: Calibri; font-size: 12pt"
+            >Based on historical price of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            in the past two years, we apply Monte Carlo simulation to simulate
+            stock price movement in the end of 2021. Therefore, we can get some
+            insights of the intrinsic value of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            in the perspective of statistics. From the simulation, the average
+            price of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is 236.80 after 3 months. Besides, we find that there is a probability
+            of 64.3% to obtain a price above the current price and a probability
+            of 49.78% to obtain a price above the target price, which effectively
+            justifies our estimation. Therefore, the robustness of </span
+          ><span style="font-family: Calibri; font-size: 12pt">ReOI</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            model has been verified (Fig. 15 &amp; 16).
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >INVESTMENT RISK</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Market risk</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Potential Decrease in Demand: </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Although it is now in the post-epidemic period, as close to 65% of
+            the company’s HA products are sold abroad, blockades and measures to
+            respond to the epidemic in some regions will still cause product sales
+            to fall (0~20%). However, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            entire industrial chain will play a strong positive role in avoiding
+            some market fluctuation risks. Even if </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            meets some reduced demand during the economic recession, we expect
+            that </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            Biotech will be able to ride out COVID-19 pandemic with more than CNY
+            3,800.87 million in revenue on its balance sheet.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Financial risk</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Exchange Rate Risk: </span
+          ><span style="font-family: Calibri; font-size: 12pt">43% of </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            revenue in fiscal 2020 was from countries outside China, but no
+            country outside of China generated more than 8% of Microsoft’s
+            revenue. </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            is exposed to volatility in exchange rate, but diversification, option
+            and forward contracts can hedge a portion of forecasted international
+            revenue. </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            estimates that currency variation will reduce 2% of revenue and
+            increase 1% of selling cost and operational expenses.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Interest Rate Risk: </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            long-term debt increased from CNY 423.5 million in 2016 to CNY 698.8
+            million in fiscal 2020. In the short term, People's Bank of China has
+            cut long-term interest rates to prop up the China economy, so </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            faces a lower cost of debt. But interest fluctuation may impact </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            consolidated financial statements in the long term.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Operational risk</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >New Product Line Risk: </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            may make investments in new product line that may not achieve expected
+            returns. Starting from January 21, 2021, the company has developed
+            HA-related products, including oral liquids, soft sweets, and
+            compressed candies. In 2016, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            and Shandong College of Pharmacy released the paper "Study on the
+            Improvement Effect of Oral Hyaluronic Acid on Skin Moisture and
+            Antioxidant Effect in the Body". The paper shows that in a controlled
+            experiment, the experimenter took 120 mg of hyaluronic acid every day
+            for 45 days, and his skin moisture increased from 8.7% to about 9.6%.
+            Nevertheless, the conclusions of related experiments are still
+            controversial.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Corporate Governance Risk: </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >On December 25, 2020, the company's director, deputy general manager
+            and secretary of the board of directors Rui Jiang stepped down from </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            Board of Directors. With Rui’s departure, the power struggle in the
+            Board may occur and raise agency costs.</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Renewal of Business Qualification: </span
+          ><span style="font-family: Calibri; font-size: 12pt">In 2021, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            will have 14 certification certificates and other business
+            qualifications to expire one after another, and the company has now
+            carried out corresponding renewal work. According to some domestic
+            laws and regulations in China, pharmaceutical device manufacturers
+            need to obtain a series of business qualifications for production,
+            registration, sales, and export, before the relevant qualifications
+            expire. </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            needs to apply for certificate renewal in time.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Political Risk
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Governmental Restriction: </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Government litigation and regulatory activities relating to
+            competition rules may limit how </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            designs and market its products.</span
+          ><br /><span
+            style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >International Restriction</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >: Potential liability under trade protection, anti-corruption, and
+            other laws about </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            global operations may bring legal claims, fines, or reputational
+            damage.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Industry Risk
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Governmental Restriction</span
+          ><span style="color: #1e4c77; font-family: Calibri; font-size: 12pt">
+            &amp; </span
+          ><span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Intense Competition: </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            must be in pace with the changing environment and invest in
+            infrastructure and devices, which may increase operating costs and
+            decrease operating margins (Fig. 17).
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >ESG ANALYSIS</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Low carbon operation, energy saving and environmental
+            protection</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The company fully implemented "Made in China 2025" and "Green
+            Manufacturing Engineering Implementation Guidelines", introduced the
+            design and management concepts of green factories, and established a
+            green factory management organization. The green factory management
+            organization has carried out in-depth research and analysis in many
+            aspects such as product development direction, production technology
+            and process equipment, starting from the aspects of production
+            automation, plant intensification, harmless raw materials, waste
+            recycling, and low-carbon energy. The establishment of a green factory
+            standard system has effectively reduced the impact of the product's
+            entire life cycle on the environment. </span
+          ><span style="font-family: Calibri; font-size: 12pt">In order to</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            effectively control the various pollutants produced by the company in
+            the production and operation process and reduce the impact on the
+            environment, the company has invested a total of 8.6 million yuan in
+            environmental protection in 2020.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Protection of intangible cultural heritage</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            regards inheriting Chinese culture and protecting "intangible cultural
+            heritage" as one of the indispensable social responsibilities of the
+            enterprise. </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            has been excavating and protecting my country’s immaterial intangibles
+            that are on the verge of disappearing for 10 consecutive years.
+            Cultural heritage is protected and passed on through the "</span
+          ><span style="font-family: Calibri; font-size: 12pt">Yunzhong</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            Series" activities every year.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Measures for COVID-19</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >：</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >After the outbreak of COVID-19, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            established an epidemic response leadership group, and fully mobilized
+            various resources to immediately organize the production of "</span
+          ><span style="font-family: Calibri; font-size: 12pt">Runbaiyan</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            Medical Disinfectant Gel" to aid the epidemic area. </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            has delivered twelve batches of anti-epidemic and living supplies such
+            as </span
+          ><span style="font-family: Calibri; font-size: 12pt">Runbaiyan</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            medical disposable disinfectant gel to more than 50 anti-epidemic
+            first-line hospitals in more than 20 urban areas. And the medical team
+            assisting Hubei made targeted donations, and the accumulated donated
+            materials exceeded 10 million yuan.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Corporate
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Progressive Framework | </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The purpose of corporate governance framework is to let Board of
+            Directors have enough authority and make sure practices are in place,
+            enabling them to evaluate business operations and to make decisions
+            independently. The directors make every effort to balance the
+            interests of directors, management, and shareholders. </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech’s</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            framework also establishes the practices include many parts such as
+            “board meetings and involvement of senior management”, “CEO
+            performance evaluation”, and “senior executive development and
+            succession planning”. The institutional shareholders can urge the
+            management to make decisions that benefit shareholders, which can
+            protect the rights of shareholders, especially the minority
+            stockholders (Fig. 18).
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Chairman of the Board | </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The chairman of the Board is also CEO in </span
+          ><span style="font-family: Calibri; font-size: 12pt">Bloomage</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">BioTech</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >. The duties of the chairman include organizing the meeting of
+            separate investors and the Board, integrating the agenda, engaging
+            with shareholders. The chairman and CEO is closely monitored by the
+            audit committee to prevent the shareholders' related rights and
+            interests from suffering losses due to improper operations.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="color: #1e4c77; font-family: Calibri; font-size: 12pt"
+            >Board |</span
+          ><span style="color: #1e4c77; font-family: Calibri; font-size: 12pt">
+          </span
+          ><span style="font-family: Calibri; font-size: 12pt">T</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >he board of directors (15 in all) consist of 3 directors with
+            advanced stock raising qualification and rick experience in hog
+            production industry and 6 experts with excellency in financing, </span
+          ><span style="font-family: Calibri; font-size: 12pt">accounting</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            and management field. The directors are evenly distributed across each
+            committee. For regular Board meeting, the directors independently meet
+            in executive sessions.
+          </span>
+        </p>
+      </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

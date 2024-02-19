@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .report {
+        width: 60%;
+        margin-bottom: 10em;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .bg-custom {
+      background-image: url("your-background-image-url.jpg");
+      background-size: cover;
+      color: rgb(190, 143, 143);
+    }
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 3em;
+    }
+    .custom-border {
+      border-width: 5px !important; /* Adjust the border width as needed */
+      border-color: rgb(
+        143,
+        123,
+        123
+      ) !important; /* Optional: change the border color */
+      border-radius: 20px;
+    }
+    .flex-container {
+        display: flex;
+        align-items: center; /* 如果你想要垂直居中对齐 */
+    }
+  </style>
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: rgb(224, 143, 188);">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link" href="./index.html" style = "color: white;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown" style = "color: white;"
+              >Project</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./project1.html"
+                  >CFA Research Challenge : Stock Price Prediction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project2.html"
+                  >Portfolio Analysis (Python, Pandas)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project3.html"
+                  >House price prediction (MLP)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project4.html"
+                  >Image Classification (CNN)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project5.html"
+                  >Collaborative Filtering (Deep Learning)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project6.html"
+                  >Ruin Probability Prediction (R)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project7.html"
+                  >Health status prediction (R)</a
+                >
+              </li>
+              <!-- <li>
+                <a class="dropdown-item" href="./project8.html"
+                  >Data Visualization (Tableau)</a
+                >
+              </li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html" style = "color: white;">Resume</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-primary" type="button" style = "background-color: rgb(125, 145, 211); border: none;">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+    <div style = "margin-bottom: 5em;"></div>
+    
+    <div class = "container report">
+        <p
+          style="
+            background-color: #ffffff;
+            font-size: 12pt;
+            line-height: 200%;
+            margin: 5pt 0pt;
+            text-align: center;
+          "
+        >
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >P</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >ortfolio Analysis
+          </span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >EVENT STUDY</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+          >
+            of BYD</span
+          >
+        </p>
+        <div class = "flex-container">
+            <p style="background-color: #ffffff; margin: 5pt 0pt">
+            <span style="font-family: Calibri; font-size: 12pt">On </span
+            ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+              >October 22, 2022, BYD</span
+            ><span style="font-family: Calibri; font-size: 12pt">
+              issued a performance forecast that the net profit attribute to
+              shareholders of listed companies from January to September 2022 will
+              be: 9.1 billion yuan to 9.5 billion yuan, and the range of change
+              compared with the same period last year: 272.48% to 288.95%.
+            </span>
+          </p>
+          <img src="./project2_img/byd.png" width="150px" alt="">
+        
+        </div>
+        
+
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >To study the effects on the performance of BYD brought by this event,
+            we choose the Estimation Period and Observation Period as bellow:
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The Observation period starts from five days before the event,
+            because there may be some relevant preludes or information leakage
+            before the event, which means that BYD’s performance could have been
+            influenced by the event to some extent.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Observation Period lasts for 1 month (about 20 trading days) and the
+            Estimation Period lasts for 1 year (about 252 trading days).
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Then we plotted the performance of BYD’s Close Price over the
+            Estimation and Observation periods (the green line is the boundary of
+            two periods and the red line represents the event day). We found that
+            the close price of BYD did not show obvious abnormalities in the
+            Observation </span
+          ><span style="font-family: Calibri; font-size: 12pt">Period</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            and we will test this hypothesis in the following steps. </span
+          ><img
+            src="./project2_img/1.png"
+            width="554"
+            height="345"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">In order to</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            exclude the influence of risk-free rate on our results, we subtracted
+            the risk-free rate from both the BYD return and market return.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Then we plot the BYD return and market return with risk-free rate
+            excluded on the same </span
+          ><span style="font-family: Calibri; font-size: 12pt">graph</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            and we found that they are highly correlated with each other.
+            Therefore, </span
+          ><span style="font-family: Calibri; font-size: 12pt">mkt_rf</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            will be a qualified candidate for our model estimation.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Next, we will estimate the model using three different methods:
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 63pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Means-adjusted returns model</span
+          >
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 63pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Market-adjusted returns model</span
+          >
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 63pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Risk adjusted returns model</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/2.png"
+            width="554"
+            height="234"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >（</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >1</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >）</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >Means-adjusted returns model
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Benchmark = average of the stock’s return in the estimation period
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Abnormal Return (AR) = return in the observation period – Benchmark
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Note: risk-free rate has been subtracted from all returns in our
+            model
+          </span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >（</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >2</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >）</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >Market-adjusted returns model
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Benchmark = the market return in observation period</span
+          >
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Abnormal Return (AR) = return in the observation period – Benchmark
+          </span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >（</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >3</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: 宋体;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >）</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 16pt;
+              font-weight: bold;
+            "
+            >Risk-adjusted returns model
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt">Fi</span
+          ><span style="font-family: Calibri; font-size: 12pt">rstly, f</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >it the regression using estimation period: </span
+          ><span style="font-family: Calibri; font-size: 12pt">ret_rf</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            = alpha + beta * mkt_rf</span
+          >
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt">Secondly, c</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >alculate the predicted return in observation period using alpha and
+            beta in Step1: </span
+          ><span style="font-family: Calibri; font-size: 12pt">pret</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            = alpha + beta * </span
+          ><span style="font-family: Calibri; font-size: 12pt">mkt_rf</span
+          ><span style="font-family: Calibri; font-size: 12pt"> (Benchmark)</span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt">Thirdly, c</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >alculate the Abnormal Return: AR = return in the observation period – </span
+          ><span style="font-family: Calibri; font-size: 12pt">pret</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Then we plotted the </span
+          ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Abnormal Return</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt">and </span
+          ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Cumulative Abnormal Return</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            for the three models:
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/3.png"
+            width="554"
+            height="208"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The three methods generated similar results.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >However, there is no clear trend in the abnormal returns obtained by
+            these three methods.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The high net profit attribute to shareholders of listed companies
+            should be an indicator of
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >BYD’s good performance and promising future development, but its
+            return decreases right after the event happened, which is
+            counterintuitive.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/4.png"
+            width="554"
+            height="208"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The performances of CAR are similar for the three methods.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >For most of the time in observation period, the CARs are negative,
+            which means that the
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >event had negative effects on the stock performance in general.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The CARs become positive around 2022-11-05. However, since it is far
+            from the event
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >day and others showing a opposite result, it can be inferred that it
+            had little relationship with the event.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 20pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Finally, we used t-statistic and p-value to test whether the return
+            is abnormal at conventional levels of significance, we </span
+          ><span style="font-family: Calibri; font-size: 12pt">found that n</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >o t-stat larger than 1.96 and no p-value smaller than 0.05,
+            indicating that it is not statistically significant at conventional
+            levels of significance. Therefore, the performance of BYD is not
+            abnormal. </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The reasons for this counterintuitive result could be</span
+          ><span style="font-family: Calibri; font-size: 12pt"> t</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >he pandemic situation affected citizens’ purchasing power which may
+            lead to the</span
+          ><span style="font-family: Calibri; font-size: 12pt"> </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >decrease for stocks in the auto industry</span
+          ><span style="font-family: Calibri; font-size: 12pt"> or s</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >ome prominent investors have cut back on BYD shares, leading some
+            people to follow his or her action.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/5.png"
+            width="554"
+            height="206"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >To do the further event study, we need to calculate the </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Average Abnormal Return (AAR)</span
+          ><span style="font-family: Calibri; font-size: 12pt">. </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >During the past 10 years, there are 54024 forecasts on the net profit
+            change range attributable to owners of the parent company (upper
+            limit)%. We divided the performance forecast into 2 types of events:
+            positive events and negative events.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >All these reports were published quarterly, so all events happened at
+            the end of March, June, September and December and there are 40 event
+            occurrence dates in total. We should first select corresponding
+            Estimation Period and Observation Period according to these dates.
+          </span>
+        </p>
+        <ul type="disc" style="margin: 0pt; padding-left: 0pt">
+          <li
+            style="
+              background-color: #ffffff;
+              font-family: serif;
+              font-size: 10pt;
+              margin: 5pt 0pt 5pt 27.6pt;
+              padding-left: 8.4pt;
+              text-indent: 0pt;
+            "
+          >
+            <span style="font-family: Calibri; font-size: 12pt"
+              >The Observation period starts from 10 days before the event.
+            </span>
+          </li>
+          <li
+            style="
+              background-color: #ffffff;
+              font-family: serif;
+              font-size: 10pt;
+              margin: 5pt 0pt 5pt 27.6pt;
+              padding-left: 8.4pt;
+              text-indent: 0pt;
+            "
+          >
+            <span style="font-family: Calibri; font-size: 12pt"
+              >Observation Period lasts for 1 month (about 20 trading days) and
+              the Estimation Period lasts for 1 year (about 252 trading days).
+            </span>
+          </li>
+        </ul>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Then we need to calculate the Average Abnormal Return (AAR) for each
+            event:
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 12pt">（</span
+          ><span style="font-family: Calibri; font-size: 12pt">1</span
+          ><span style="font-family: 宋体; font-size: 12pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >For each positive event, we found the corresponding stocks with
+            positive prediction on that event day. Then we extracted these stocks
+            from the overall table.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 12pt">（</span
+          ><span style="font-family: Calibri; font-size: 12pt">2</span
+          ><span style="font-family: 宋体; font-size: 12pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >We split the data into estimation period and observation period
+            according to the DATE TABLE we got.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 12pt">（</span
+          ><span style="font-family: Calibri; font-size: 12pt">3</span
+          ><span style="font-family: 宋体; font-size: 12pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >We chose Risk-adjusted returns method to estimate our model. Before
+            doing the regression, we first checked the number of </span
+          ><span style="font-family: Calibri; font-size: 12pt">date</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            for each stock in the estimation period. If the number is very small,
+            the regression will be </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >meaningless. Here we excluded the stocks with less than 30 days in
+            the estimation periods.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 12pt">（</span
+          ><span style="font-family: Calibri; font-size: 12pt">4</span
+          ><span style="font-family: 宋体; font-size: 12pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >We got the regression result from the estimation period and merge the
+            alpha and beta into the observation period and calculate the AR
+            (different on each stock each day).
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 12pt">（</span
+          ><span style="font-family: Calibri; font-size: 12pt">5</span
+          ><span style="font-family: 宋体; font-size: 12pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >We calculate the AAR by taking the average of the AR on each day in
+            observation period.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 12pt">（</span
+          ><span style="font-family: Calibri; font-size: 12pt">6</span
+          ><span style="font-family: 宋体; font-size: 12pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >We use a for loop to redo it for every positive </span
+          ><span style="font-family: Calibri; font-size: 12pt">events</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            and recorded all AARs for the observation periods of all events.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 12pt">（</span
+          ><span style="font-family: Calibri; font-size: 12pt">7</span
+          ><span style="font-family: 宋体; font-size: 12pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Repeated it for the negative events.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/6.png"
+            width="554"
+            height="153"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">The </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Cumulative Average Abnormal Return (CAAR) is the sum of each column
+            in the above table. It represents the impact of this type of event on
+            the stock performance from the beginning of the observation period to
+            the end. </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Then we plotted the CAAR for both types of events:
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/7.png"
+            width="554"
+            height="206"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The CAARs for positive events and negative events behave very much
+            alike. This means that the events do not have a decisive impact on its
+            stock price. This similarity may be </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >due to the fact that</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            all stocks are influenced by the market force, which is much more
+            significant than published report.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >For positive events, sometimes CAAR is greater than 0, sometimes less
+            than 0. This indicates that positive events have no significant effect
+            on stock performance.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >For negative events, most of the time the CAAR is negative, which
+            means that negative events usually bring negative impacts on the stock
+            performance.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The CAARs for positive events are generally higher than the negative
+            events, indicating that the positive events have a more positive
+            effects on the stock performance compared to negative events.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 20pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >If we long the stocks with positive prediction and sell the stocks
+            with negative prediction, our CAAR will be positive for almost the
+            entire observation period, which means that we are very likely to earn
+            profit from this strategy:
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/8.png"
+            width="554"
+            height="206"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+          <span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            >LONG SHORT PORTFOLIOS</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >long-short portfolio is an investment strategy that involves taking
+            both long positions (buying assets) and short positions (selling
+            assets that are not owned) in financial instruments simultaneously.
+            The goal is to profit from the relative performance of the
+            assets.</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            There are several different indicators for long-short portfolios
+            building, here we select the following 6 widely used indicators:</span
+          >
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 10pt">（</span
+          ><span style="font-family: Calibri; font-size: 10pt">1</span
+          ><span style="font-family: 宋体; font-size: 10pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0;&#xa0;&#xa0; </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Price</span
+          ><span style="font-family: Calibri; font-size: 12pt">: l</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >n (price by the end of previous month)
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 10pt">（</span
+          ><span style="font-family: Calibri; font-size: 10pt">2</span
+          ><span style="font-family: 宋体; font-size: 10pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0;&#xa0;&#xa0; </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Volume Variance:</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            the standard deviation of the volume in the past 3 years
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 10pt">（</span
+          ><span style="font-family: Calibri; font-size: 10pt">3</span
+          ><span style="font-family: 宋体; font-size: 10pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0;&#xa0;&#xa0; </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Amihud’s</span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+          >
+            Liquidity Measure</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >: the average of the ratio – absolute value of daily return / daily
+            trading volume in the past 1 year
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 10pt">（</span
+          ><span style="font-family: Calibri; font-size: 10pt">4</span
+          ><span style="font-family: 宋体; font-size: 10pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0;&#xa0;&#xa0; </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Short-term Reversal</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >: the monthly return in the last month
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 10pt">（</span
+          ><span style="font-family: Calibri; font-size: 10pt">5</span
+          ><span style="font-family: 宋体; font-size: 10pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0;&#xa0;&#xa0; </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >52-week High</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >: closing price / the highest price in the past year
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: 宋体; font-size: 10pt">（</span
+          ><span style="font-family: Calibri; font-size: 10pt">6</span
+          ><span style="font-family: 宋体; font-size: 10pt">）</span
+          ><span style="font: 7pt 'Times New Roman'">&#xa0;&#xa0;&#xa0; </span
+          ><span
+            style="
+              color: #1e4c77;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-weight: bold;
+            "
+            >Max</span
+          ><span style="font-family: Calibri; font-size: 12pt">: </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >maximum daily return in the last month
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >There are also many different metrics for the long-short portfolio
+            performance, here we also select </span
+          ><span style="font-family: Calibri; font-size: 12pt">5</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            representative indicators:</span
+          >
+        </p>
+        <ul type="disc" style="margin: 0pt; padding-left: 0pt">
+          <li
+            style="
+              background-color: #ffffff;
+              color: #1e4c77;
+              font-family: serif;
+              font-size: 10pt;
+              margin: 5pt 0pt 5pt 27.6pt;
+              padding-left: 8.4pt;
+              text-indent: 0pt;
+            "
+          >
+            <span
+              style="
+                color: #1e4c77;
+                font-family: Calibri;
+                font-size: 12pt;
+                font-weight: bold;
+              "
+              >Annualized Return
+            </span>
+          </li>
+          <li
+            style="
+              background-color: #ffffff;
+              color: #1e4c77;
+              font-family: serif;
+              font-size: 10pt;
+              margin: 5pt 0pt 5pt 27.6pt;
+              padding-left: 8.4pt;
+              text-indent: 0pt;
+            "
+          >
+            <span
+              style="
+                color: #1e4c77;
+                font-family: Calibri;
+                font-size: 12pt;
+                font-weight: bold;
+              "
+              >Annualized Volatility
+            </span>
+          </li>
+          <li
+            style="
+              background-color: #ffffff;
+              font-family: serif;
+              font-size: 10pt;
+              margin: 5pt 0pt 5pt 27.6pt;
+              padding-left: 8.4pt;
+              text-indent: 0pt;
+            "
+          >
+            <span
+              style="
+                color: #1e4c77;
+                font-family: Calibri;
+                font-size: 12pt;
+                font-weight: bold;
+              "
+              >Sharpe Ratio</span
+            ><span style="font-family: Calibri; font-size: 12pt">: (</span
+            ><span style="font-family: Calibri; font-size: 12pt"
+              >Annualized return– annualized risk-free rate) / Annualized
+              volatility
+            </span>
+          </li>
+          <li
+            style="
+              background-color: #ffffff;
+              font-family: serif;
+              font-size: 10pt;
+              margin: 5pt 0pt 5pt 27.6pt;
+              padding-left: 8.4pt;
+              text-indent: 0pt;
+            "
+          >
+            <span
+              style="
+                color: #1e4c77;
+                font-family: Calibri;
+                font-size: 12pt;
+                font-weight: bold;
+              "
+              >Winning Rate</span
+            ><span style="font-family: Calibri; font-size: 12pt"
+              >: the number of days with positive return / total days
+            </span>
+          </li>
+          <li
+            style="
+              background-color: #ffffff;
+              font-family: serif;
+              font-size: 10pt;
+              margin: 5pt 0pt 5pt 27.6pt;
+              padding-left: 8.4pt;
+              text-indent: 0pt;
+            "
+          >
+            <span
+              style="
+                color: #1e4c77;
+                font-family: Calibri;
+                font-size: 12pt;
+                font-weight: bold;
+              "
+              >Maximum Drawn Down</span
+            ><span style="font-family: Calibri; font-size: 12pt">: </span
+            ><span style="font-family: Calibri; font-size: 12pt"
+              >(maximum return – minimum return) / maximum return
+            </span>
+          </li>
+        </ul>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Here is the result we got:</span
+          >
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/9.png"
+            width="600"
+            height="500"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Based on the annualized return, Strategy2 is the best portfolio,
+            followed by Strategy1.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The annualized volatility of these portfolios </span
+          ><span style="font-family: Calibri; font-size: 12pt">are</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            relatively close to each other.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >Stragegy2 achieves the highest Sharpe Ratio, which indicates the best
+            performance.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >All winning rates of these portfolios are around 50% and Strategy5 is
+            the one with highest number of positive return days.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >However, strategy5 also achieve the highest maximum drawn down, which
+            means that is has the highest downside risk.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 20pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">T</span
+          ><span style="font-family: Calibri; font-size: 12pt">he </span
+          ><span style="font-family: Calibri; font-size: 12pt">Net-</span
+          ><span style="font-family: Calibri; font-size: 12pt">V</span
+          ><span style="font-family: Calibri; font-size: 12pt">alue </span
+          ><span style="font-family: Calibri; font-size: 12pt">C</span
+          ><span style="font-family: Calibri; font-size: 12pt">urve for </span
+          ><span style="font-family: Calibri; font-size: 12pt">L</span
+          ><span style="font-family: Calibri; font-size: 12pt">ong-short </span
+          ><span style="font-family: Calibri; font-size: 12pt">P</span
+          ><span style="font-family: Calibri; font-size: 12pt">ortfolios</span
+          ><span style="font-family: Calibri; font-size: 12pt">:</span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <img
+            src="./project2_img/10.png"
+            width="554"
+            height="234"
+            alt=""
+            style="
+              -aw-left-pos: 0pt;
+              -aw-rel-hpos: column;
+              -aw-rel-vpos: paragraph;
+              -aw-top-pos: 0pt;
+              -aw-wrap-type: inline;
+            "
+          />
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >All these portfolios perform show the similar tendency over specific
+            period. For example, the abnormal cumulative return in 2015 correspond
+            with the stock market crush in that year.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >However, these portfolios </span
+          ><span style="font-family: Calibri; font-size: 12pt">lagged behind</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            changes in stocks because in the middle of 2015, the stock market
+            crush already began. This is reasonable because the indicators we use
+            to construct the long-short portfolio always have a time span.
+            Therefore, we can conclude that the long- short portfolios can reflect
+            the market status to some </span
+          ><span style="font-family: Calibri; font-size: 12pt">extend</span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >, but not immediate reflection.
+          </span>
+        </p>
+        <p
+          style="
+            background-color: #ffffff;
+            margin: 5pt 0pt 5pt 21pt;
+            text-indent: -21pt;
+          "
+        >
+          <span style="font-family: Wingdings; font-size: 12pt"></span
+          ><span style="font: 7pt 'Times New Roman'"
+            >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >The net-value curves coincide with our precious analysis: the
+            Strategy1(Price) and Strategy2(Volume Variance) generate the highest
+            return. Though with a relatively higher volatility, they still turn
+            out to be the most profitable strategies with high Sharpe ratio.
+          </span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+        <p style="background-color: #ffffff; margin: 5pt 0pt">
+          <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+        </p>
+      </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project6</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .report {
+        width: 60%;
+        margin-bottom: 10em;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    .bg-custom {
+      background-image: url("your-background-image-url.jpg");
+      background-size: cover;
+      color: rgb(190, 143, 143);
+    }
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 3em;
+    }
+    .custom-border {
+      border-width: 5px !important; /* Adjust the border width as needed */
+      border-color: rgb(
+        143,
+        123,
+        123
+      ) !important; /* Optional: change the border color */
+      border-radius: 20px;
+    }
+  </style>
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: rgb(224, 143, 188);">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link" href="./index.html" style = "color: white;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown" style = "color: white;"
+              >Project</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./project1.html"
+                  >CFA Research Challenge : Stock Price Prediction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project2.html"
+                  >Portfolio Analysis (Python, Pandas)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project3.html"
+                  >House price prediction (MLP)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project4.html"
+                  >Image Classification (CNN)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project5.html"
+                  >Collaborative Filtering (Deep Learning)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project6.html"
+                  >Ruin Probability Prediction (R)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project7.html"
+                  >Health status prediction (R)</a
+                >
+              </li>
+                            <!-- <li>
+                <a class="dropdown-item" href="./project8.html"
+                  >Data Visualization (Tableau)</a
+                >
+              </li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html" style = "color: white;">Resume</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-primary" type="button" style = "background-color: rgb(125, 145, 211); border: none;">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+    <div style = "margin-bottom: 5em;"></div>
+    <div class = "container report">
+      <p style="margin: 0pt">
+        <img
+          src="./project6_img/1.jpg"
+          width="290"
+          height="193"
+          alt="How to File for Bankruptcy: 13 Easy Steps | Money"
+          style="
+            -aw-left-pos: 102.23pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 17.81pt;
+            -aw-wrap-type: topbottom;
+            margin-bottom: 0;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; text-align: center">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt; text-align: center">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >Will your company go bankruptcy?</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >ABSTRACT</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >This report aims to find the model with the highest accuracy and
+          interpretability to predict whether a company will go bankruptcy using
+          a series of financial ratios. For pre-processing, we do the data
+          cleaning and rebalance the data using ROSE method. After randomly
+          split the entire data set into training data (60%), validation data
+          (20%) and test data (20%), we use the training data to fit different
+          models. Our models include Linear methods (Logistic Regression, Linear
+          &amp; Quadratic Discriminant Analysis, </span
+        ><span style="font-family: Calibri; font-size: 12pt">Naïve</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          Bayes, Ridge Regression, Lasso), Tree methods (Single Tree, Pruned
+          Tree, Bagging, Random Forest, Boosting), Support Vector Machines
+          (linear, radial, polynomial kernel) and Neural Network. We choose
+          validation Area Under Curve (AUC) as our benchmark and do the
+          comparison. We found that Logistic Regression method gives the best
+          performance. To further improve the interpretability, we refit the
+          best models in each method with the most significant features given by
+          Logistic Regression. The result showed Logistic Regression still
+          performs the best, which reported 85.90% test accuracy and 89.71% test
+          AUC with balanced false errors.
+        </span>
+      </p>
+      <p style="margin: 0pt">
+        <img
+          src="https://img.money.com/2022/01/Explainer-How-To-File-For-Bankruptcy.jpg"
+          width="2"
+          height="2"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0; margin-top: 0px;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >INTRODUCTION</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Bankruptcy and failure of business have a negative impact on the
+          enterprise itself, the industry, and even the economy. Entrepreneurs,
+          economists, </span
+        ><span style="font-family: Calibri; font-size: 12pt">shareholders</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          and investors pay much attention to the prediction accuracy on the
+          bankruptcy. An accurate prediction can not only help investors make
+          decisions, but also guide the company to pay more attention to the
+          important factors and ratios, which are highly related to bankruptcy,
+          in daily operations. If any important ratios are abnormal, the
+          executives of the company should be alert and pay immediate attention
+          to avoid bankruptcy. This project can help us to predict company
+          bankruptcy. This can help stakeholders make investment and lending
+          decisions. It can also help businessmen </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >to improve operations and better control risks. The results of the
+          study will benefit the economic analysis as well.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In this study, the data used were all financial ratios. There are in
+          total 96 features and 6819 observations. They can be categorized into
+          the following groups: solvency, capital structure ratios,
+          profitability, turnover ratios, cash flow ratios, and growth rate. In
+          practice, we will evaluate an enterprise’s performance, profitability,
+          the ability to pay debt and so on by looking into these ratios. These
+          variables are all ratios that can reveal the possibility of bankruptcy
+          and we want to find out the most important ones. To overcome the
+          missing data and imbalance problem, we did some preprocessing.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We used four types of classifiers. The first category was linear
+          methods including logistic regression, Linear &amp; Quadratic
+          Discriminant Analysis, </span
+        ><span style="font-family: Calibri; font-size: 12pt">Naïve</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          Bayes, Ridge Regression, and Lasso. The second was tree-based methods
+          including single tree, pruned tree, bagging, random forest and
+          boosting. The third method is support vector machines, and the fourth
+          is neural networks.
+        </span>
+      </p>
+      <p style="margin: 20pt 0; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DATA P</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >ROCESSING</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In the preprocessing part, we will first delete missing values and
+          unreasonable parameters which should not have values of a large scale
+          like R&amp;D expense rate according to our accounting knowledge. The
+          distribution plot of R&amp;D expense rate (figure 1) shows that there
+          are unreasonable and rare values of over 1 million, which will
+          decrease our model prediction accuracy and predictability. After that,
+          we split the data into training, validation, and test set in the ratio
+          of 6:2:2 since we have a large sample size</span
+        ><span style="font-family: Calibri; font-size: 12pt">.</span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/2.png"
+          width="539"
+          height="326"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Secondly, we need to rebalance the data due to heavily imbalanced
+          output variable ‘Bankruptcy’. There are 6599 zero values in
+          ‘Bankruptcy’ while only 220 are one </span
+        ><span style="font-family: Calibri; font-size: 12pt">values,</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          prediction model tends to bias toward non-bankruptcy output if we
+          don’t rebalance our training set. We utilized four most common
+          rebalancing method which are oversampling, combination of oversampling
+          and under sampling, ROSE and SMOTE to re-sample original training set,
+          and compare validation AUC by fitting GLM and SVM. Result shows that
+          ROSE performs best under both models, so our final data was resampled
+          using ROSE method. (Detail data resampling and fitting ROC will be
+          showed in the appendix)
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/3.png"
+          width="554"
+          height="85"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We will use AUC as a criterion to compare different models instead of
+          MSE, since our data set is imbalanced and only using MSE will bias
+          toward 0 values. For example, the figure below shows that if we
+          predict all the observations as 0, FNR is 1and FPR is 0 but the
+          overall accuracy is 95%. Unlike MSE, ROC curve will balance both the
+          FPR &amp; FNR and provide us the true interpretation of accuracy.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/4.png"
+          width="554"
+          height="124"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 20pt 0; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MODEL 1: LINEAR MODEL</span
+        >
+      </p>
+
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Logistic Regression</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >To deal with the classification problem, we first fit logistic
+          regression model using all features. The validation accuracy is about
+          86.71%, and the AUC is about 96.1%. Among all the 77 variables, only
+          27 of them are significant with p-value lower than 5%.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/5.png"
+          width="554"
+          height="201"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >This model has two advantages. Firstly, it may include some features
+          with little relationship to the response, so they are not helpful for
+          predicting. Secondly, the model with 77 variables has low
+          interpretability. Thus, we further refine our model by removing the
+          less significant features. We refit the logistic regression using the
+          27 variables whose p-value is less than 5%.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >It shows that the validation error and AUC are slightly lower than
+          the model using all features. It is reasonable since using less
+          predictors will result in lower flexibility and higher bias. However,
+          we think it is worth sacrificing little precision but greatly
+          improving the interpretability by reducing so many variables.
+        </span>
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >L</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >inear Discriminant Analysis &amp; Quadratic Discriminant
+          Analysis</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The Linear Discriminant Analysis method (LDA) results in 85.85%
+          validation error and 88.67% AUC, which is lower than Logistic
+          Regression. The results suggest that the assumption of LDA (i.e., the
+          observations are drawn from the normal distribution with common
+          variance in each class) is not true.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >To further relax the assumption on LDA, The Quadratic Discriminant
+          Analysis allow different classes with different variances. The QDA
+          method generates the result with 96.09% validation accuracy and 60.23%
+          AUC. The results suggest that the LDA may capture more accurate
+          relationship than QDA, which suggests that there is no significant
+          difference in variance between classes.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/6.png"
+          width="554"
+          height="98"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Naïve Bayes</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >The </span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >Naïve</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+        >
+          Bayes method generates the result with 94.92% validation error and
+          74.46% AUC. The performance is not impressive because </span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >Naïve</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+        >
+          Bayes is useful when </span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >the number of observations is very small, but our data is not the
+          case. </span
+        ><br /><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Ridge Regression</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 0pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >For ridge regression, we use cross validation to choose the best
+          tuning parameter, which turns out to be 0.0253. Since the tunning
+          parameter is very small, the penalty term has little effect on the
+          regression.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/7.png"
+          width="554"
+          height="118"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The validation accuracy for Ridge Regression is about 86.86%, and the
+          AUC is about 89.20%. None of the coefficients are shrank to zero since
+          Ridge Regression does not perform variable selection.
+        </span>
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Lasso</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The coefficient plot of Lasso shows that many coefficients can be
+          shrank to exactly zero. We perform cross validation to find the best
+          tuning parameter for Lasso is about 0.0032, which also puts little
+          constraints on the regression. There are 38 features whose coefficient
+          is reduced to 0, so the Lasso model with the best tuning parameter
+          contains only 39 features.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/8.png"
+          width="554"
+          height="337"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >For Lasso, the validation accuracy is about 86.40%, and the AUC is
+          about 88.95%, which shows a worse performance compared to ridge
+          regression. This is consistent with the theoretical knowledge that
+          Lasso tends to perform better when the number of predictors is small,
+          but our data is not the case.
+        </span>
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Summary</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Among all these models, Logistic Regression turns out to be the best
+          model for our prediction with the highest AUC.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >To further ensure its accuracy and stability, we use different random
+          sets to generate new training and validation sets to check the AUCs.
+          Logistic regression using different </span
+        ><span style="font-family: Calibri; font-size: 12pt">set.seed</span
+        ><span style="font-family: Calibri; font-size: 12pt"> are: </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/9.png"
+          width="554"
+          height="365"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >All these random splits generate similar and high AUCs under logistic
+          regression. Therefore, we can conclude that logistic regression is the
+          most accurate and stable method up to now.
+        </span>
+      </p>
+      <p style="margin: 20pt 0; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MODEL 2: TREE-BASED MODEL</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Single Tree</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The tree library is used to construct classification tree, which is
+          used to analyze the bankruptcy data after preprocessing. We first
+          construct a single decision tree. Six terminal nodes are used to
+          construct the tree. The training misclassification error rate is
+          0.7103%, which is very low. The single tree performs bad on the
+          validation </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >dataset. Its validation accuracy is 37.45% and its AUC is 32.18%. The
+          good prediction on the training set indicates that the unpruned tree
+          may overfit, leading to the poor test set performance. After
+          graphically displaying the tree structure, we see that the variable
+          used for the first split is </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Net.Value.Growth.Rate</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >. Thus, the most important indicator appears to be net value growth
+          rate</span
+        ><span style="font-family: Calibri; font-size: 12pt">.</span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/10.png"
+          width="554"
+          height="334"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Pruning the Tree
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >To control overfitting, we consider whether pruning the tree for an
+          improved result. We used cross-validation to determine the optimal
+          level of the tree complexity. The tree with 6 terminal nodes results
+          in the lowest cross-validation error rate and deviance. Therefore, we
+          cannot prune the </span
+        ><span style="font-family: Calibri; font-size: 12pt">tree, since</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          the pruning process doesn’t generate a tree with fewer terminal nodes.
+          The reason might be the original single tree has only 6 leaves, and
+          the number of nodes is already small. For the bankruptcy dataset, we
+          cannot produce a more interpretable tree using pruning.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/11.png"
+          width="554"
+          height="325"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Bagging</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Since the single decision tree may suffer from high variance, we want
+          low variance and low bias. Therefore, we use bagging to construct
+          multiple trees. Bagging uses Bootstrapping to generate multiple trees,
+          so we have plenty of training datasets. Then it records the class that
+          each bootstrapped dataset predicts and provide an overall prediction
+          to the most commonly occurring one (majority vote). In R, we use </span
+        ><span style="font-family: Calibri; font-size: 12pt">adabag</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          library to carry out bagging. We set the iteration to be 100 times.
+          The validation accuracy rate turns out to be 96.40%, which is a big
+          improvement compared to the single tree. It also performs well on the
+          AUC, which is 57.69%.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Random Forest</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >If there are many highly correlated quantities, averaging the
+          predictions will not lead to a large variance reduction. We want to
+          remove the correlation by random split each time. Therefore, we use
+          random forest. When building random forest, each time a spit in a tree
+          is considered, a random selection of m predictors is taken at each
+          time. In R, we use the package </span
+        ><span style="font-family: Calibri; font-size: 12pt">randamForest</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          to build these trees. The number of trees we use to construct the
+          forest is 500. After running R code, it selects 8 as the number of
+          variables at each split, which is almost equal to the square root of
+          number of predictors. The out-of-bag(OOB) error of the random forest
+          on bankruptcy data is 0.05%. We then </span
+        ><span style="font-family: Calibri; font-size: 12pt">look into</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          the importance of variables by </span
+        ><span style="font-family: Calibri; font-size: 12pt">varImp</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >(). The most important variable turns out to be</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt">ROA(C)_</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >before_interest_and_depreciation_before_interest</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >, which is different from the most important indicator generates by a
+          single tree. This proves that random forest indeed has a fresh split
+          each time and avoid selecting the same variable as the first split.
+          The validation accuracy of random forest is 96.33%. When we set
+          different </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >seeds, we get different error rate, and in some situation random
+          forest performs better than bagging. The AUC of random forest is
+          worse, only 36.95%.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/12.png"
+          width="554"
+          height="166"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Boosting</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The last tree-based method that we perform is Boosting. Under
+          boosting, trees are grown sequentially. Each tree is grown using
+          information from the previous tree. We fit the residuals literally
+          step by step. Again, we conduct boosting using </span
+        ><span style="font-family: Calibri; font-size: 12pt">adabag</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          in R. We set the iteration to be 100 times. The validation error rate
+          of boosting is 96.87%, and its AUC is 56.58%.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Summary</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In conclusion, the best model among tree-based method is Bagging. It
+          produces the minimum AUC, which is 57.69%.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/13.png"
+          width="554"
+          height="278"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 20pt 0; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MODEL 3: SUPPORT VECTOR MACHINE</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We selected 20 most correlated parameters with output to increase
+          model predictability and decrease complexity, Then, we tested linear,
+          polynomial, and radial kernel using cross validation to choose the
+          best model. The linear kernel </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >performs best in three but appears with problems of overfitting. Best
+          linear kernel uses cost of 0.01, and 1792 number of support vectors
+          which represents severe overfitting.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/14.png"
+          width="554"
+          height="302"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 20pt 0; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >MODEL 4: NEURAL NETWORK</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The Neural Network model achieves approximately 90% on the validation
+          dataset. The highest accuracy would be achieved when the iteration
+          times set to 17000 and keep probability of 0.06 in a three layers
+          Neural Network. In our data training process, we only set a relatively
+          high learning rate which is 0.05 due to the limited computing power.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Model Structure</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/15.png"
+          width="487"
+          height="728"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Tuning Hyperparameter</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >For Neural Network, the most important process is to find the optimal
+          hyperparameters. In our research, the following hyperparameters are
+          adjusted:
+        </span>
+      </p>
+      <ol type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 32.11pt;
+            padding-left: 3.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Number of layers: 2,3
+          </span>
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 32.11pt;
+            padding-left: 3.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Learning rate: 0.0007, 0.01,0.05
+          </span>
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 32.11pt;
+            padding-left: 3.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Number of iterations: (7000,40000)
+          </span>
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 32.11pt;
+            padding-left: 3.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Activation Function: (</span
+          ><span style="font-family: Calibri; font-size: 12pt">ReLU</span
+          ><span style="font-family: Calibri; font-size: 12pt">, tanh, </span
+          ><span style="font-family: Calibri; font-size: 12pt">Sigmod</span
+          ><span style="font-family: Calibri; font-size: 12pt">) </span>
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 32.11pt;
+            padding-left: 3.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Dropout Method: (Keep Probability)
+          </span>
+        </li>
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 5pt 0pt 5pt 32.11pt;
+            padding-left: 3.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt"
+            >Regularization
+          </span>
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Layer Selection</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >At first, we examine the number of layers in neural network. The
+          result shows that, generally, the 3-layer neural network gives us a
+          higher validation AUC value, which is approximately 90%. However,
+          since the 3-layer model will more easily overfit the data and results
+          in a bad performance, we conduct regularization and dropout method to
+          improve the model.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/16.png"
+          width="554"
+          height="481"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Dropout Method</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >By using different keep probability, we find that the highest
+          Validation AUC is 91.62%. The model has learning rate of 0.05, number
+          of iteration time of 17000 and </span
+        ><span style="font-family: Calibri; font-size: 12pt">ReLU</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          activation function</span
+        ><span style="font-family: Calibri; font-size: 12pt">.</span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/17.png"
+          width="554"
+          height="251"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >L2 Regularization</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We also try to use L2 regularization and best Validation AUC is
+          91.93% when having learning rate of 0.01, number of iteration times of
+          15000. Therefore, dropout and regularization methods can indeed
+          improve the model performance.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/18.png"
+          width="554"
+          height="219"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Adam Gradient Descent</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >To further improve the model, we examine other gradient descent
+          method, which is Adam. However, from the below graph we can find that
+          the cost function does not converge as the number of iteration times
+          increases. We consider the reason why Adam gradient descent method
+          performances worse than the original method is the limited sample
+          size.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/19.png"
+          width="348"
+          height="245"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Summary</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In conclusion, the best model from Neural Network </span
+        ><span style="font-family: Calibri; font-size: 12pt">are</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          1) 3-layer(10,5 nodes separately) Neural Network with learning rate of
+          0.05, number of iteration times of 15000, regularization lambda of 10
+          and 2) 3-layer(10,5 nodes separately) Neural Network with learning
+          rate of 0.05, number of iteration times of 17000, dropout keep
+          probability of 0.6
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Finally, we make a comparison about this two NN models using
+          different splitting sets. The results show that the second model have
+          a more stable estimation. There, the final Neural Network model is a
+          3-layer(10,5 nodes separately) Neural Network with learning rate of
+          0.05, number of iteration times of 15000, regularization lambda of 10.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/20.png"
+          width="448"
+          height="279"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 20pt 0; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DISCUSSION</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Our study focuses on choosing the proper method to analyze the
+          bankruptcy data and make predictions for companies. To get the best
+          predictions, a real-world Taiwan dataset is used. We have fit the data
+          to linear models, tree-based models, support vector machines and
+          neural networks. We use AUC as the criteria to compare different
+          models.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/21.png"
+          width="554"
+          height="65"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >However, using all 77 variables to make prediction is relatively
+          unrealistic, since it is difficult to obtain all these variables for a
+          company. Therefore, further improvements are made to make the model
+          more predictable. We select the 27 variables that are significant in
+          logistic regression model and use then to run a new logistic
+          regression. The results show that the AUC values only </span
+        ><span style="font-family: Calibri; font-size: 12pt">decreases</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          slightly, which is 95.87%. Therefore, in terms of a balance between
+          prediction accuracy and interpretability, we choose logistic
+          regression with 27 significant variables as our final model.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Furthermore, to consolidate our conclusion, we run the </span
+        ><span style="font-family: Calibri; font-size: 12pt">tree-based</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >, SVM and neural network model using these 27 significant variables
+          and all of them does not outperform the logistic regression model.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/22.png"
+          width="554"
+          height="65"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In short, our final model is logistic regression with 27 significant
+          variables.
+        </span>
+      </p>
+      <p style="margin: 20pt 0; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >CONCLUSION</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We choose Logistic Regression with 27 significant variables to be our
+          final model and check its performance using test data. It shows that
+          the test accuracy is about 85.90%, the test AUC is about 89.71%. The
+          false positive error is 13.96% and the false negative error is 18%. We
+          can conclude from this result that Logistic Regression model provides
+          high accuracy as well as quite balanced false errors. The results can
+          serve as evidence to be applied in the daily operations of business to
+          help investors and company executives to make wise decisions. Further
+          analysis in a narrower field may be carried out for better predictions
+          in different industries.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project6_img/23.png"
+          width="554"
+          height="104"
+          alt="文本&#xA;&#xA;描述已自动生成"
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 20pt 0; margin-bottom: 5pt;">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >REFERENCE</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: TimesNewRomanPSMT; font-size: 12pt"
+          >Liang, D., Lu, C. C., Tsai, C. F., &amp; Shih, G. A. (2016).
+          Financial ratios and corporate governance indicators in bankruptcy
+          prediction: A comprehensive study. </span
+        ><span
+          style="
+            font-family: TimesNewRomanPS;
+            font-size: 12pt;
+            font-style: italic;
+          "
+          >European Journal of Operational </span
+        ><span
+          style="
+            color: #878787;
+            font-family: Calibri;
+            font-size: 9pt;
+            vertical-align: -9pt;
+          "
+          >12 </span
+        ><span
+          style="
+            font-family: TimesNewRomanPS;
+            font-size: 12pt;
+            font-style: italic;
+          "
+          >Research</span
+        ><span style="font-family: TimesNewRomanPSMT; font-size: 12pt">, </span
+        ><span
+          style="
+            font-family: TimesNewRomanPS;
+            font-size: 12pt;
+            font-style: italic;
+          "
+          >252</span
+        ><span style="font-family: TimesNewRomanPSMT; font-size: 12pt"
+          >(2), 561-572.
+        </span>
+      </p>
+    </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

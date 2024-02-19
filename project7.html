@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project7</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .report {
+        width: 60%;
+        margin-bottom: 10em;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    .bg-custom {
+      background-image: url("your-background-image-url.jpg");
+      background-size: cover;
+      color: rgb(190, 143, 143);
+    }
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 3em;
+    }
+    .custom-border {
+      border-width: 5px !important; /* Adjust the border width as needed */
+      border-color: rgb(
+        143,
+        123,
+        123
+      ) !important; /* Optional: change the border color */
+      border-radius: 20px;
+    }
+  </style>
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: rgb(224, 143, 188);">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link" href="./index.html" style = "color: white;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown" style = "color: white;"
+              >Project</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./project1.html"
+                  >CFA Research Challenge : Stock Price Prediction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project2.html"
+                  >Portfolio Analysis (Python, Pandas)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project3.html"
+                  >House price prediction (MLP)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project4.html"
+                  >Image Classification (CNN)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project5.html"
+                  >Collaborative Filtering (Deep Learning)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project6.html"
+                  >Ruin Probability Prediction (R)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project7.html"
+                  >Health status prediction (R)</a
+                >
+              </li>
+                            <!-- <li>
+                <a class="dropdown-item" href="./project8.html"
+                  >Data Visualization (Tableau)</a
+                >
+              </li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resume.html" style = "color: white;">Resume</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-primary" type="button" style = "background-color: rgb(125, 145, 211); border: none;">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+    <div style = "margin-bottom: 5em;"></div>
+    <div class="container report">
+      <p style="margin: 0pt">
+        <img
+          src="https://i.ytimg.com/vi/-L-EIrI425c/maxresdefault.jpg"
+          width="2"
+          height="2"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >Health Status Prediction for Horses</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >Business Understanding</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Business </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Background</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The prediction of health outcomes for horses is a vital endeavor
+          within the realm of equine management and veterinary care. Horses,
+          whether they are involved in racing, breeding, sports, or simply
+          companionship, are cherished and valuable animals.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The equine industry is a significant part of the agricultural and
+          recreational sectors in many countries. Horses are used for various
+          purposes, including racing, breeding, riding, and as companions. And
+          for animal welfare part, ethical considerations and legal regulations
+          often require owners and caretakers to provide proper care for horses.
+          Ensuring the health and well-being of horses is critical to the
+          success and sustainability of this industry. Predicting health
+          outcomes helps in early intervention, reducing suffering, and
+          maintaining compliance with animal welfare laws. Besides, from the
+          financial perspective, horses are valuable assets, and their health
+          can have a substantial financial impact on owners, breeders, and
+          trainers. Accurate predictions of health issues can prevent costly
+          treatments, reduce the risk of losing valuable horses, and improve
+          overall financial management.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Causes for the Death of Horses</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Surgery: Yes/No</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt">Age</span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt">pain level</span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >health condition (</span
+        ><span style="font-family: Calibri; font-size: 12pt">e.g.</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          pulse, peripheral pulse, respiratory rate, abdomen)</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >lesions condition, …</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Key Objectives</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Reduce the Death Rate of Our Horses</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Identify the horses with probabilities of death around 0.5, provide
+          special care for them.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Deployments</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Provide appropriate treatment based on abnormal physical data for the
+          horses</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Hire specialized veterinarians for horses</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Upgrade medical equipment, ……</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DATA </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >Understanding</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The data used is from a competition of Kaggle. It provides three
+          datasets, training set, test training set and the outcome set. In
+          training set, it has </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >1235 observations </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >(number of horses in the data</span
+        ><span style="font-family: Calibri; font-size: 12pt">)</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          and 29 variables are presented, including </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >28 independent variables</span
+        ><span style="font-family: Calibri; font-size: 12pt"> and the </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >target variable “outcome”</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >), which is the health status of horses (lived / </span
+        ><span style="font-family: Calibri; font-size: 12pt">enthanized</span
+        ><span style="font-family: Calibri; font-size: 12pt"> / died). </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The training dataset includes the horse's physical data (like age,
+          pulse, etc.) and health data (like temperature, pain degree, surgery,
+          etc.). Different horses in different age range are with different
+          health conditions, and horses in similar physical conditions are
+          likely to have similar health status. From these data, we can gain a
+          basic understanding of horses’ health and physical conditions. We
+          would develop a model to predict the probability of death for our
+          horses. We would provide appropriate treatment for the target segments
+          of horses. In this way, their survival probability would </span
+        ><span style="font-family: Calibri; font-size: 12pt">increase</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          and they would generate more future profits for us. The specific
+          treatment we provide to horses will be based on the significance of
+          variables.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-style: italic"
+          >Data Source: </span
+        ><a
+          style="color: #0563c1"
+          href="https://www.kaggle.com/competitions/playground-series-s3e22/data"
+          ><span
+            style="
+              color: #0563c1;
+              font-family: Calibri;
+              font-size: 12pt;
+              font-style: italic;
+              text-decoration: underline;
+            "
+            >https://www.kaggle.com/competitions/playground-series-s3e22/data</span
+          ></a
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >Data Processing</span
+        >
+      </p>
+
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Data Cleaning</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >The columns ‘id’ and ‘hospital number’ are unique for each row and
+          are attribute data that have no meaning in data analysis process, so
+          we dropped these two columns.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Some faults exist in “lesion_1”, “lesion_2” and “lesion_3” columns so
+          we build 4 new variables(“</span
+        ><span style="font-family: Calibri; font-size: 12pt">lesion_site</span
+        ><span style="font-family: Calibri; font-size: 12pt">”, “</span
+        ><span style="font-family: Calibri; font-size: 12pt">lesion_type</span
+        ><span style="font-family: Calibri; font-size: 12pt">”, “</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >lesion_subtype</span
+        ><span style="font-family: Calibri; font-size: 12pt">”, “</span
+        ><span style="font-family: Calibri; font-size: 12pt">lesion_code</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >”) according to “lesion_1”, which contains the correct and necessary
+          information.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >We transformed the 14 categorial variables from character into factor
+          type.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >For all the 'None' (which is the missing values), we classified them
+          into a new category called 'Unknow'; for all the 'none’, which are an
+          available value indicating that nothing observed in that variables, we
+          maintained these values.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >We only care about factors that influence the status of survival of
+          horses, so we transformed our target variable ‘outcome’ into a dummy
+          variable(1 for lived, 0 for </span
+        ><span style="font-family: Calibri; font-size: 12pt">enthanized</span
+        ><span style="font-family: Calibri; font-size: 12pt"> / died).</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Correlation Analysis</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >To observe the relationships between variables, we visualized the
+          relationship of the target variable ‘outcome’ and each variable.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <img
+          src="./project7_img/1.png"
+          width="700"
+          height="250"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >From the above visualization outcomes, we learned that surgery is
+          likely to have a significant influence on outcome. The performance of
+          outcome </span
+        ><span style="font-family: Calibri; font-size: 12pt">are</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          different in two groups, which may indicate that horses with surgery
+          are less likely to survive. Also, the performance of outcome is
+          different between groups in different variables, like Extremities,
+          Peripheral Pulse, Membrane and Capillary.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <img
+          src="./project7_img/2.png"
+          width="700"
+          height="450"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >From the above visualizations, we learned that different features
+          have different impact on outcome. Some are obvious, while some are
+          obscure. Therefore, we developed different models to fit the
+          prediction of outcome using above features and selected the best
+          model, then analyzed features that are most impactful and devise
+          strategies to improve the survival possibility of horses.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Additional Data Exploration: K-means</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We applied k-means to find the segment with the highest death
+          probability. From the result we learned that maybe we should target at
+          the segment with serious pain and low total protein since it has the
+          highest mortality.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">Note: </span
+        ><span style="font-family: Calibri; font-size: 12pt">Serious_pain</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          refers to the ‘pain’ equals to ‘alert’, ‘</span
+        ><span style="font-family: Calibri; font-size: 12pt">extreme_pain</span
+        ><span style="font-family: Calibri; font-size: 12pt">’, ‘</span
+        ><span style="font-family: Calibri; font-size: 12pt">severe_pain</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >’ or ‘depresses’.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <img
+          src="./project7_img/3.png"
+          width="554"
+          height="175"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >Modeling</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Model Framework</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Uncertainty</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >: Alive / Dead (not alive)</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Decision</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >: decide which horses to provide treatment with extra costs (choose
+          the threshold)</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The decision of whether the horse is selected as our target horse is
+          based on the P( Alive | X ), we would only select the horses with P(
+          Alive | X ) within certain threshold that could generate highest
+          profits for us.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Goal: maximize(t) E[ profit | Target(t), X]
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >      </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+        </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >= P( Alive | Target(t), X) * [V(Target, X) – C] - P( Not Alive |
+          Target(t), X) * C</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="font-family: Calibri; font-size: 12pt"
+          >X represents each horse</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="font-family: Calibri; font-size: 12pt"
+          >t is the threshold, the horse that satisfies this threshold should be
+          our target horse</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="font-family: Calibri; font-size: 12pt"
+          >C represents the monthly costs of treatment</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="font-family: Calibri; font-size: 12pt"
+          >V is the monthly value (revenues) of the horse from now on</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Assumption:</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="font-family: Calibri; font-size: 12pt"
+          >The profit of the project only considers the target horses</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="font-family: Calibri; font-size: 12pt"
+          >The values and costs are all identical for each horse, which we will
+          specify in the cost-benefit matrix later</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 21pt;
+          text-indent: -21pt;
+        "
+      >
+      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
+      >&#xa0;&#xa0;&#xa0;&#xa0;</span
+    ><span style="font-family: Calibri; font-size: 12pt"
+          >The horse that died could not generate any revenues, and the
+          treatment costs we spent on it is nonrefundable</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Subcomponents needed:
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Probability of Alive, score of each horse (based on the probability
+          we predict), expected profits of horses (cost-benefit matrix),
+          optimize over threshold</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Model </span
+        ><span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Training</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We choose the following models with </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >10-fold Cross Validation </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >to predict the probability of alive:</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Calibri; font-size: 12pt">(1)</span
+        ><span style="font: 7pt 'Times New Roman'">&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Null Model (benchmark)</span
+        ><span style="font-family: 宋体; font-size: 12pt">：</span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">          </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >It predicts all the probabilities as 0.4653.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project7_img/4.png"
+          width="554"
+          height="368"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We did not choose logistic regression because the sizes of some
+          groups in our categorial variables is extremely small, which would
+          lead to new variables appearing in prediction.</span
+        >
+      </p>
+      <p style="margin: 20pt 0;margin-bottom: 5pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >Model Evaluation</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We chose OOS Accuracy, Area Under Curve (AUC) and OOS </span
+        ><span style="font-family: Calibri; font-size: 12pt">Rsquare</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          as our metrics to select model. We calculated the mean of each metric
+          for 10 folds in cross validation, and we got the following
+          results</span
+        ><span style="font-family: Calibri; font-size: 12pt">. </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >From this result, we found that the Random Forest model generated the
+          highest OOS Accuracy (0.7823), the highest AUC (0.7774) as well as the
+          highest OOS </span
+        ><span style="font-family: Calibri; font-size: 12pt">Rsquare</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          (0.1181). Therefore, we selected it as our final model and construct
+          the model again with the whole training data for further prediction.
+          We also plotted the ROC curve, which can help us determine the
+          threshold that generate the highest expected profit.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project7_img/5.png"
+          width="554"
+          height="451"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 10pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DEPLOYMENT</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Assign Scores</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Since we have a budget for this project, we need to rank the horses
+          based on their probability of death. We believe that horses with
+          probabilities around 0.5 are the most valuable ones to provide
+          treatment because their physical condition is at a critical point, and
+          treatment is likely to help them survive and continue to create
+          values. Horses with probabilities around 0 and 1 do not have treatment
+          value. Horses with alive probabilities close to 1 are indicative of
+          good health and do not require medical intervention, while horses with
+          a probability near 0 are severely ill, so treatment may not be
+          effective, resulting in unnecessary expenses. With this in mind, we
+          set our Score as :</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt; text-align: center">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >1 - | probability - 0.5| * 2</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Score close to 1 means the alive probability of the horse is
+          extremely close to </span
+        ><span style="font-family: Calibri; font-size: 12pt">0.5, and</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          score close to 0 means the probability is extremely close to 0 or
+          1.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Cost-Benefit Matrix</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We will only treat horses with a score greater than a certain
+          threshold. Assuming the monthly cost of treating each horse is $1k,
+          and the monthly revenue generated by a living horse is $2.1 thousand.
+          Our Cost-benefit Matrix will look as follows:
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project7_img/6.png"
+          width="554"
+          height="157"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Profit Curve &amp; Expected Profit</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >With this cost-benefit matrix, we can plot our profit curve based on
+          our model</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          based on the following formula:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt; text-align: center">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >E[profit | Target(t), X]</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt; text-align: center">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >= P( Alive |Target(t), X) * [V(Target, X)–C] - P(Not Alive
+          |Target(t), X) * C</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We should provide treatment to the </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >top 68% of horses </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >with highest scores. Our threshold score is 0.31, and the
+          corresponding range of </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >predictive probability is from 0.156 to 0.835</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >. In this situation, we got the confusion matrix</span
+        ><span style="font-family: Calibri; font-size: 12pt">, and o</span
+        ><span style="font-family: Calibri; font-size: 12pt">ur </span
+        ><span style="font-family: Calibri; font-size: 12pt">highest </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >expected profit = 44 * 1.1 – 37 * 1 = 11.4k every month.
+        </span>
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project7_img/7.png"
+          width="554"
+          height="145"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Significance of Variables</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Now that we know which horses to treat for maximum profit, we also
+          need to understand the specific treatments these horses require. We
+          have identified the top 10 variables that have the most significant
+          impact on the survival rate of horses, as follows:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project7_img/8.png"
+          width="253"
+          height="209"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In this output, “pain”, “pulse”, “packed cell column”, “mucous
+          membrane”, “total protein”, “rectal temperature” and “temperature of
+          extremities” are all physical indicators that are used to monitor the
+          physical condition of horses. This reminds us that we should check the
+          horse‘s daily health regularly. When one or more of these indicators
+          deviate from the norm, they should be given special attention in
+          relation to the other indicators. The variables “lesion code”, “lesion
+          type” and “lesion site” are related to the condition of horses after
+          the onset of an ailment. In addition to monitoring the daily physical
+          indicators of horses, these variables play a significant role in
+          determining the survival rate of horses after they become ill in terms
+          of the treatment process and medical procedures. This suggests that
+          when we detect that a horse is ill, we should promptly provide the
+          appropriate treatment and continue to monitor the performance of these
+          variables.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Risk Analysis</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The risks our project will face include potential side effects from
+          treatments, regulations related to changing animal health for
+          commercial purposes, and the possibility that the model may overfit.
+          We could mitigate these risk</span
+        ><span style="font-family: Calibri; font-size: 12pt">s</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          by conducting </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >thorough pre-treatment, engaging with regulatory authorities and </span
+        ><span style="font-family: Calibri; font-size: 12pt">experts</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          and collecting more training data for further model optimizing.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+    </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
