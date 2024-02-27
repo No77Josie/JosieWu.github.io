@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project3</title>
+    <title>Project4</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,6 +21,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .bg-custom {
       background-image: url("your-background-image-url.jpg");
@@ -40,6 +41,10 @@
         123
       ) !important; /* Optional: change the border color */
       border-radius: 20px;
+    }
+    .flex-container {
+        display: flex;
+        align-items: center; /* 如果你想要垂直居中对齐 */
     }
     .dropdown-menu a {
       color: rgb(136, 70, 106);
@@ -99,11 +104,11 @@
                   >Health status prediction (R)</a
                 >
               </li>
-              <li>
+                            <li>
                 <a class="dropdown-item" href="./project8.html"
                   >Data Visualization (Tableau)</a
                 >
-              </li> 
+              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -118,10 +123,11 @@
     </div>
   </nav>
     <div style = "margin-bottom: 5em;"></div>
-    <div class = "container report">
+    
+    <div class="container report">
       <p style="margin: 0pt">
         <img
-          src="https://i.ytimg.com/vi/-L-EIrI425c/maxresdefault.jpg"
+          src="./project4_img/0.jpg"
           width="2"
           height="2"
           alt=""
@@ -134,22 +140,7 @@
           "
         />
       </p>
-      <p style="margin: 0pt; text-align: center">
-        <img
-          src="./project3_img/1.jpg"
-          width="307"
-          height="185"
-          alt=""
-          style="
-            -aw-left-pos: 0pt;
-            -aw-rel-hpos: column;
-            -aw-rel-vpos: paragraph;
-            -aw-top-pos: 0pt;
-            -aw-wrap-type: inline;
-          "
-        />
-      </p>
-      <p style="margin: 0pt; text-align: center">
+      <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
         <span
           style="
             color: #1e4c77;
@@ -160,7 +151,7 @@
           >&#xa0;</span
         >
       </p>
-      <p style="margin: 0pt; text-align: center">
+      <p style="margin: 0pt; orphans: 0; text-align: center; widows: 0">
         <span
           style="
             color: #1e4c77;
@@ -168,29 +159,21 @@
             font-size: 16pt;
             font-weight: bold;
           "
-          >House Price Prediction</span
-        >
-      </p>
-      <p style="margin: 0pt; text-align: center">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Python – Google </span
+          >Ve</span
         ><span
           style="
             color: #1e4c77;
             font-family: Calibri;
-            font-size: 12pt;
+            font-size: 16pt;
             font-weight: bold;
           "
-          >Colab</span
+          >getable Image Classification</span
         >
       </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <span
           style="
             color: #1e4c77;
@@ -199,237 +182,8 @@
             font-weight: bold;
             text-decoration: underline;
           "
-          >ABSTRACT</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >For real estate agents, employing data analysis techniques to
-          estimate property prices is a crucial aspect of their operations. This
-          is because they strive to ensure that their purchase prices remain
-          below the future selling prices of the properties. In this study, we
-          aim to model property prices using Multilayer Perceptron (MLP) and
-          fine-tune the model hyperparameters to optimize performance.
-          Subsequently, we will analyze the profitability of the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          business model based on the predicted prices generated from the
-          validation dataset.</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Objectives</span
-        >
-      </p>
-      <p
-        style="
-          background-color: #ffffff;
-          margin: 5pt 0pt 5pt 21pt;
-          text-indent: -21pt;
-        "
-      >
-      <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
-          >&#xa0;&#xa0;&#xa0;&#xa0;</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >To model property prices using MLP.</span
-        >
-      </p>
-      <p
-        style="
-          background-color: #ffffff;
-          margin: 5pt 0pt 5pt 21pt;
-          text-indent: -21pt;
-        "
-      >
-        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
-          >&#xa0;&#xa0;&#xa0;&#xa0;</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >To tune the hyperparameters of the MLP model to enhance
-          accuracy.</span
-        >
-      </p>
-      <p
-        style="
-          background-color: #ffffff;
-          margin: 5pt 0pt 5pt 21pt;
-          text-indent: -21pt;
-        "
-      >
-        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
-          >&#xa0;&#xa0;&#xa0;&#xa0;</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >To assess the profitability of the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          business model based on predicted property prices.</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Methodology</span
-        >
-      </p>
-      <p
-        style="
-          background-color: #ffffff;
-          margin: 5pt 0pt 5pt 21pt;
-          text-indent: -21pt;
-        "
-      >
-        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
-          >&#xa0;&#xa0;&#xa0;&#xa0;</span
+          >M</span
         ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Data Preprocessing</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >: Clean and preprocess the data to ensure its suitability for
-          analysis.</span
-        >
-      </p>
-      <p
-        style="
-          background-color: #ffffff;
-          margin: 5pt 0pt 5pt 21pt;
-          text-indent: -21pt;
-        "
-      >
-        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
-          >&#xa0;&#xa0;&#xa0;&#xa0;</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Model Construction</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >: Develop an MLP model to predict property prices.</span
-        >
-      </p>
-      <p
-        style="
-          background-color: #ffffff;
-          margin: 5pt 0pt 5pt 21pt;
-          text-indent: -21pt;
-        "
-      >
-        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
-          >&#xa0;&#xa0;&#xa0;&#xa0;</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Hyperparameter Tuning</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >: Optimize the model hyperparameters using techniques such as grid
-          search or random search.</span
-        >
-      </p>
-      <p
-        style="
-          background-color: #ffffff;
-          margin: 5pt 0pt 5pt 21pt;
-          text-indent: -21pt;
-        "
-      >
-        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
-          >&#xa0;&#xa0;&#xa0;&#xa0;</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Evaluation</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >: Assess the performance of the tuned MLP model using validation
-          data.</span
-        >
-      </p>
-      <p
-        style="
-          background-color: #ffffff;
-          margin: 5pt 0pt 5pt 21pt;
-          text-indent: -21pt;
-        "
-      >
-        <span style="font-family: Calibri; font-size: 12pt">•</span><span style="font: 7pt 'Times New Roman'"
-          >&#xa0;&#xa0;&#xa0;&#xa0;</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Profitability Analysis</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >: Analyze the profitability of the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          business model based on the predicted property prices.</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Expected Outcome</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >The project aims to provide insights into the efficacy of using MLP
-          for real estate price estimation and to evaluate the potential
-          profitability of the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          business model in the real estate market.</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >Keywords: Real estate, Multilayer Perceptron (MLP), Hyperparameter
-          tuning, </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          business model, Profitability analysis.</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 20pt 0pt; margin-bottom: 5pt;">
-        <span
           style="
             color: #1e4c77;
             font-family: Calibri;
@@ -437,35 +191,304 @@
             font-weight: bold;
             text-decoration: underline;
           "
-          >DATA PROCESSING</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span
+          >OTIVITION</span
+        ><span
           style="
             color: #1e4c77;
             font-family: Calibri;
             font-size: 12pt;
             font-weight: bold;
+            text-decoration: underline;
           "
-          >Overview</span
         >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >I first </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >took a look</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          at the distribution of sale prices, the correlation matrix and the
-          distribution of houses over different NBHD in the train data.</span
+          and </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >DATA</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+        >
+        </span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >UNDERSTANDING</span
         >
       </p>
       <p style="background-color: #ffffff; margin: 5pt 0pt">
         <img
-          src="./project3_img/2.png"
-          width="600"
-          height="500"
+          src="./project4_img/0.jpg"
+          width="245"
+          height="233"
+          alt=""
+          style="
+            -aw-left-pos: 227.28pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 16.31pt;
+            -aw-wrap-type: square;
+            float: right;
+            margin: 0pt 9pt;
+          "
+        /><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Background</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >With the increasing availability of image data and the advancements
+          in computer vision, the task of recognizing vegetables from images has
+          gained importance. Accurate classification can aid farmers in
+          monitoring crop health, assist chefs in recipe recommendations, and
+          provide consumers with an interactive grocery shopping
+          experience.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Problem Description</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The primary challenge we aim to tackle is the development of a robust
+          and accurate vegetable image classification system. This involves
+          training a machine learning model to recognize and categorize various
+          vegetables based on their visual features. The model should be capable
+          of handling diverse datasets, encompassing different types of
+          vegetables, variations in lighting, and various angles of
+          capture.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Key Objectives</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Train a machine learning model using a labeled dataset of vegetable
+          images.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Achieve high accuracy in classifying a wide range of vegetables
+          commonly found in the market.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Implement the model to handle real-world scenarios, considering
+          variations in </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >lighting conditions</span
+        ><span style="font-family: Calibri; font-size: 12pt"> and </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >image angles</span
+        ><span style="font-family: Calibri; font-size: 12pt">. </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Optimize the model for efficiency, enabling quick and accurate
+          predictions.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Expected Outcomes</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >A trained machine learning model capable of accurately classifying
+          vegetable images.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Improved efficiency in crop monitoring for farmers, leading to
+          timely</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >intervention in case of plant diseases or issues.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Enhanced user experience for chefs, providing a tool for quick and
+          accurate vegetable identification for recipe planning.
+        </span>
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >A foundation for future developments in image classification,
+          potentially expanding to other food categories.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Significance of the Project</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The successful implementation of this project holds the potential to
+          revolutionize how we interact with vegetables in various fields. From
+          precision agriculture to culinary arts, accurate vegetable image
+          classification can pave the way for innovative applications that
+          positively impact different aspects of our daily lives.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Data Understanding</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In this dataset there are 20,000 images from 15 classes, including
+          Bean, Bitter Gourd, Bottle Gourd, Brinjal, Broccoli, Cabbage,
+          Capsicum, Carrot, Cauliflower, Cucumber, Papaya, Potato, Pumpkin,
+          Radish, Tomato. Each class has an equal proportion. The image
+          resolution is 224×224 and in *.jpg format and the color channel </span
+        ><span style="font-family: Calibri; font-size: 12pt">is</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          3. These pixels are the features we will use to do the image
+          classification. We visualized a random sample in each class to check
+          the quality of the image data:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project4_img/1.png"
+          width="338"
+          height="289"
           alt=""
           style="
             -aw-left-pos: 0pt;
@@ -477,237 +500,26 @@
         />
       </p>
       <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Data Preparation</span
-        >
-      </p>
-      <ul type="disc" style="margin: 0pt; padding-left: 0pt">
-        <li
-          style="
-            background-color: #ffffff;
-            color: #212121;
-            font-family: serif;
-            font-size: 10pt;
-            margin: 6pt 0pt 4.5pt 27.6pt;
-            padding-left: 8.4pt;
-            text-indent: 0pt;
-          "
-        >
-          <span
-            style="
-              color: #212121;
-              font-family: Calibri;
-              font-size: 12pt;
-              font-weight: bold;
-            "
-            >Train labels</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >: We need to extract the sale prices from the train data as train
-            labels. Since the house prices can take very large values, to make
-            training fast it is helpful to define the train labels as the sale
-            prices divided by a normalization factor.</span
-          >
-        </li>
-        <li
-          style="
-            background-color: #ffffff;
-            color: #212121;
-            font-family: serif;
-            font-size: 10pt;
-            margin: 6pt 0pt 4.5pt 27.6pt;
-            padding-left: 8.4pt;
-            text-indent: 0pt;
-          "
-        >
-          <span
-            style="
-              color: #212121;
-              font-family: Calibri;
-              font-size: 12pt;
-              font-weight: bold;
-            "
-            >Handing non-numeric features</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >: Some of the house features are non-numeric. We will learn about
-            how to process categorical data in the upcoming lectures. For now,
-            you can remove those non-numeric features and only train over the
-            numeric features.</span
-          >
-        </li>
-        <li
-          style="
-            background-color: #ffffff;
-            color: #212121;
-            font-family: serif;
-            font-size: 10pt;
-            margin: 6pt 0pt 4.5pt 27.6pt;
-            padding-left: 8.4pt;
-            text-indent: 0pt;
-          "
-        >
-          <span
-            style="
-              color: #212121;
-              font-family: Calibri;
-              font-size: 12pt;
-              font-weight: bold;
-            "
-            >Feature standardization</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >: When predicting house prices, you started from features that took
-            a variety of ranges—some features had small floating-point values,
-            and others had </span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >fairly large</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-            integer values. The model might be able to automatically adapt to
-            such heterogeneous data, but it would </span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >definitely make</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-            learning more difficult. A widespread best practice for dealing with
-            such data is to do feature-wise normalization: for each feature in
-            the input data (a column in the input </span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >dataframe</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >), we subtract the mean of the feature and divide by the standard
-            deviation, so that the feature is centered around 0 and has a unit
-            standard deviation.</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >&#xa0;</span
+        <span style="font-family: Calibri; font-size: 12pt">Data Source: </span
+        ><a
+          style="color: #4472c4"
+          href="https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset"
           ><span
             style="
-              color: #212121;
+              color: #4472c4;
               font-family: Calibri;
               font-size: 12pt;
-              font-weight: bold;
+              font-style: italic;
+              text-decoration: underline;
             "
-            >Note</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >: We need to ensure that the train and test data go through the
-            same normalization.</span
-          >
-        </li>
-        <li
-          style="
-            background-color: #ffffff;
-            color: #212121;
-            font-family: serif;
-            font-size: 10pt;
-            margin: 6pt 0pt 4.5pt 27.6pt;
-            padding-left: 8.4pt;
-            text-indent: 0pt;
-          "
-        >
-          <span
-            style="
-              color: #212121;
-              font-family: Calibri;
-              font-size: 12pt;
-              font-weight: bold;
-            "
-            >Handling missing values</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >: There may exist some entries with missing values. After the
-            feature standardization, we can impute the missing values with
-            zeros.</span
-          >
-        </li>
-      </ul>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >DataLoaders</span
-        ><span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-        >
-          and Batching</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >After creating training, test, and validation data, we can create </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >DataLoaders</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          for this data by following two steps:</span
-        >
-      </p>
-      <ul type="disc" style="margin: 0pt; padding-left: 0pt">
-        <li
-          style="
-            background-color: #ffffff;
-            color: #212121;
-            font-family: serif;
-            font-size: 10pt;
-            margin: 6pt 0pt 4.5pt 27.6pt;
-            padding-left: 8.4pt;
-            text-indent: 0pt;
-          "
-        >
-          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >Create a known format for accessing our data, using</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >&#xa0;</span
-          ><a
-            style="color: #212121"
-            href="https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fpytorch.org%2Fdocs%2Fstable%2Fdata.html%23torch.utils.data.TensorDataset"
-            target="_blank"
-            ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-              >TensorDataset</span
-            ></a
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >&#xa0;</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >which takes in an input set of data and a target set of data with
-            the same first dimension, and creates a dataset.</span
-          >
-        </li>
-        <li
-          style="
-            background-color: #ffffff;
-            color: #212121;
-            font-family: serif;
-            font-size: 10pt;
-            margin: 6pt 0pt 4.5pt 27.6pt;
-            padding-left: 8.4pt;
-            text-indent: 0pt;
-          "
-        >
-          <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >Create </span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >DataLoaders</span
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-            and batch our training, validation, and test Tensor datasets. Note
-            that we will shuffle the train data, so the model will not learn a
-            particular order. For test data, we do not shuffle.</span
-          >
-        </li>
-      </ul>
-      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
+            >https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset</span
+          ></a
         >
       </p>
       <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <span
           style="
             color: #1e4c77;
@@ -716,264 +528,157 @@
             font-weight: bold;
             text-decoration: underline;
           "
-          >MODEL CONSTRUCTION</span
+          >DATA PREPARATION</span
         >
       </p>
       <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Linear Regression as Benchmark</span
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We split our dataset into three parts, where 70%(approx.) for
+          training and 15%(approx.) for testing, and the rest 15%(approx.) for
+          validation.</span
         >
       </p>
-      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >Note that with house prices, as with stock prices, we care about
-          relative quantities more than absolute quantities. Thus</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >,</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          we tend to care more about the relative error than about the absolute
-          error. For instance, if our prediction is off by</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >$100,000 when estimating the sale price of a house which is</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >$125,000, then we are probably doing a horrible job. On the other
-          hand, if we err by this amount for a house with sale price</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >$2 million, this might represent a pretty accurate prediction.</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >To this end, we will use the median error rate (MER) used by</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
-        ><a
-          style="color: #212121"
-          href="https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fwww.zillow.com%2Fz%2Fzestimate%2F"
-          target="_blank"
-          ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-            >Zestimate</span
-          ></a
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >to measure the predictive performance. The error rate is defined
-          as</span
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Training Data:</span
         >
       </p>
       <p
         style="
           background-color: #ffffff;
-          margin: 6pt 0pt 4.5pt;
-          text-align: center;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
         "
       >
-        <span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Error Rate</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-        >
-        </span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >=</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-        >
-        </span
-        ><span
-          style="
-            color: #212121;
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >∣</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-        >
-          (</span
-        ><span
-          style="
-            color: #212121;
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >∣</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Predicted Price−Actual Price</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >|) / </span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Actual Price</span
-        ><span
-          style="
-            color: #212121;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-        >
-        </span
-        ><span
-          style="
-            color: #212121;
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >∣</span
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >15,000 images for 15 classes (1000 images each)</span
         >
       </p>
-      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >The median error rate is defined as the median of error rates for all
-          properties.</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          Then we </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >are able to</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          plot the training </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >and validation </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >error (MER) over epochs:</span
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Size of each image is 224*224 and images are in *.jpg format.</span
         >
       </p>
-      <p style="margin: 0pt">
-        <img
-          src="./project3_img/3.png"
-          width="450"
-          height="340"
-          alt=""
-          style="
-            -aw-left-pos: 0pt;
-            -aw-rel-hpos: column;
-            -aw-rel-vpos: paragraph;
-            -aw-top-pos: 0pt;
-            -aw-wrap-type: inline;
-          "
-        />
-      </p>
-      <p style="margin: 0pt">
-        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
-      </p>
-      <p style="margin: 0pt">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >Multi-layer Perceptron Base Model</span
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Validation Data:</span
         >
       </p>
-      <p style="margin: 0pt">
-        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >3,000 images for 15 classes (200 images each)</span
+        >
       </p>
-      <p style="margin: 0pt">
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Size of each image is 224*224 and images are in *.jpg format.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >Test Data:</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >3,000 images for 15 classes (200 images each)</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Size of each image is 224*224 and images are in *.jpg format.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
         <span style="font-family: Calibri; font-size: 12pt"
-          >We build a multi-layer perceptron neural network with 2 hidden layers
-          of sizes 256 and 128, respectively and </span
-        ><span style="font-family: Calibri; font-size: 12pt">ReLu</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          activations. Then we plot the training </span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >and validation </span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >error (MER) over epochs:</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          (learning rate = 0.003, epoch = 200)</span
+          >To better prepare image datasets for modelling, we set the target
+          height and width (224*224) for images and applied preprocessing
+          transformations including resizing and normalization. We made sure
+          that the pixel values are scaled to have a mean of 0.5 and a standard
+          deviation of 0.5 across each color channel. This helped create a
+          standardized and stable input for the neural network, promoting better
+          training and generalization performance.</span
         >
       </p>
-      <p style="margin: 0pt">
-        <img
-          src="./project3_img/4.png"
-          width="450"
-          height="340"
-          alt=""
-          style="
-            -aw-left-pos: 0pt;
-            -aw-rel-hpos: column;
-            -aw-rel-vpos: paragraph;
-            -aw-top-pos: 0pt;
-            -aw-wrap-type: inline;
-          "
-        />
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We also created </span
+        ><span style="font-family: Calibri; font-size: 12pt">ImageFolder</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          datasets for training, validation, and testing and employed the </span
+        ><span style="font-family: Calibri; font-size: 12pt">DataLoader</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          to efficiently load batches of data during model training. We chose
+          the batch size to be 128 and turned on the shuffle.</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Now out data is ready for modelling.</span
+        >
       </p>
-      <p style="margin: 0pt">
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
         <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
       </p>
-      <p style="margin: 0pt">
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <span
           style="
             color: #1e4c77;
             font-family: Calibri;
             font-size: 12pt;
             font-weight: bold;
+            text-decoration: underline;
           "
-          >Change Network Architecture</span
+          >MODELING</span
         >
       </p>
-      <p style="margin: 0pt">
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <span
           style="
             color: #1e4c77;
@@ -984,20 +689,47 @@
           >&#xa0;</span
         >
       </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt"
-          >Then we build a MLP with 4 hidden layer of sizes 512, 256, 128, 54,
-          respectively and plot the training and validation error (MER) over
-          epochs</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >: (learning rate = 0.001, epoch = 200)</span
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Model Structure</span
         >
       </p>
-      <p style="margin: 0pt">
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Based on the property of our problem, we chose the following models
+          and hyperparameters:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >1. Multi-layer Perceptron Base Model:</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >There are 3 fully connected layers. The input layer has 224*224*3
+          neurons, connecting to a hidden layer with 1024 neurons, followed by
+          another hidden layer with 256 neurons, and an output layer with 15
+          neurons. </span
+        ><span style="font-family: Calibri; font-size: 12pt">ReLU</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          activation functions are applied to the hidden layers while log-</span
+        ><span style="font-family: Calibri; font-size: 12pt">softmax</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          activation is applied to output layer for classification.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <img
-          src="./project3_img/5.png"
-          width="450"
-          height="340"
+          src="./project4_img/2.png"
+          width="407"
+          height="164"
           alt=""
           style="
             -aw-left-pos: 0pt;
@@ -1008,10 +740,89 @@
           "
         />
       </p>
-      <p style="margin: 0pt">
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >2. Simple CNN Model:</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
       </p>
-      <p style="margin: 0pt">
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The CNN model has one convolutional layer, max-pooling, and two fully
+          connected layers. The convolutional layer has 3 input channels, 16
+          output channels, and a kernel size of 3x3 with padding. Max-pooling
+          reduces the spatial dimensions by half. The first fully connected
+          layer has 112*112*16 input features, connecting to a hidden layer of
+          size 256, followed by an output layer with the specified number of
+          classes. </span
+        ><span style="font-family: Calibri; font-size: 12pt">ReLU</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          activation functions are used in the convolutional and hidden layers,
+          and dropout with a probability of 0.25 is applied for regularization.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <img
+          src="./project4_img/3.png"
+          width="494"
+          height="171"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >3. VGG16 Model</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The VGG16 model is valuable for image classification due to its deep
+          architecture and proven performance. With 16 weight layers, including
+          13 convolutional layers, it captures intricate hierarchical features
+          in images, allowing it to recognize complex patterns and shapes. The
+          use of small 3x3 convolutional filters throughout the network promotes
+          more effective feature learning. Therefore, we chose to use VGG16 as
+          one of our models which strikes a balance between model complexity and
+          interpretability.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >4. </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >ResNet</span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+          Model</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">The </span
+        ><span style="font-family: Calibri; font-size: 12pt">ResNet</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          model is also one popular model for image classification since it
+          enables the training of very deep architectures. We initialized a
+          pre-trained ResNet18 model and adapted it for CIFAR-</span
+        ><span style="font-family: Calibri; font-size: 12pt">2</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          classification by modifying the output layer to match the number of
+          categories. This leveraged the pre-trained weights for feature
+          extraction, allowing efficient transfer learning and improved
+          convergence.
+        </span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <span
           style="
             color: #1e4c77;
@@ -1019,26 +830,31 @@
             font-size: 12pt;
             font-weight: bold;
           "
-          >Add</span
-        ><span
+          >Hyperparameters Selection</span
+        >
+      </p>
+
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The following table lists the hyperparameters we chose:</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <img
+          src="./project4_img/4.png"
+          width="478"
+          height="210"
+          alt=""
           style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
           "
-        >
-          Norm Regularization (L2 Norm)</span
-        >
+        />
       </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt">(</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >4 hidden layers of sizes 512, 256, 128, 64 and norm regularization,
-          learning rate = 0.001, epoch = 200)</span
-        >
-      </p>
-      <p style="margin: 0pt">
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <span
           style="
             color: #1e4c77;
@@ -1049,11 +865,421 @@
           >&#xa0;</span
         >
       </p>
-      <p style="margin: 0pt">
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The loss function we used are </span
+        ><span style="font-family: Calibri; font-size: 12pt">NLLLoss</span
+        ><span style="font-family: Calibri; font-size: 12pt"> and </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >CrossEntropyLoss</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >, which are applied for classification. And we chose Adam and SGD for
+          optimizers. Due to the large pixel size and</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >numerous features of these images, our training process is very slow.
+          Therefore, we chose 10 as the number of epochs to mitigate the
+          prolonged training time.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Pros and Cons</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >1. Multi-layer Perceptron (MLP) Base Model</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Pros: easy to understand; fast training speed.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Cons: limited capacity (hard to capture complex hierarchical
+          features); lack of spatial information (ignore spatial relationships
+          in pixel values).</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >2. CNN Model</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Pros: better feature learning; moderate complexity (balance between
+          simplicity and capacity).</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Cons: slow training speed; limited depth.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >3. VGG16 Model</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Pros: hierarchical features (deep architecture captures intricate
+          hierarchical features); transfer learning (pre-trained on large
+          datasets, facilitating transfer learning).</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Cons: higher computational cost for deeper architecture; likely to
+          overfit.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >4. </span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >ResNet</span
+        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
+          Model</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Pros: deep residual learning (address vanishing gradient problem,
+          allowing deeper architectures); transfer learning.</span
+        >
+      </p>
+      <p
+        style="
+          background-color: #ffffff;
+          margin: 5pt 0pt 5pt 36pt;
+          text-indent: -18pt;
+        "
+      >
+        <span style="font-family: Arial; font-size: 12pt">•</span
+        ><span style="font: 7pt 'Times New Roman'"
+          >&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >Cons: high computational cost; long training time.</span
+        >
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span style="font-family: 等线; font-size: 10.5pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >IMPLEMENTATION</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The challenge that we met in implementing is that the accuracy we got
+          from simple CNN model is relatively low. We believed this was because
+          the Simple CNN model has only one convolutional layer and pooling
+          layer. Therefore, we are attempting to increase the depth of the
+          network. Here is our improved CNN model:</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
         <img
-          src="./project3_img/6.png"
-          width="450"
-          height="340"
+          src="./project4_img/5.png"
+          width="466"
+          height="279"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: 宋体; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >RESULTS </span
+        ><span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >and EVALU</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >ATION</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Training Results</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We trained the above 5 models and recorded all the training losses
+          and validation losses for each epoch. We chose validation loss and
+          classification accuracy as our metrics to measure the performance of
+          models. Here are the results:</span
+        >
+      </p>
+      <ol type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Multi-layer Perceptron Base Model:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Despite its simplicity, the simple Multi-layer Perceptron Model
+          exhibits challenges in accurately classifying certain items, resulting
+          in a test accuracy of 66.70%.</span
+        >
+      </p>
+      <ol start="2" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Simple CNN Model:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The CNN model demonstrates strong performance on the dataset,
+          achieving a commendable 90% test accuracy. However, it seems to be
+          overfitting after epoch 5.</span
+        >
+      </p>
+      <ol start="3" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Improved CNN Model:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Enhancements to the model, including increased depth, the
+          incorporation of Batch Normalization, and Dropout layers, lead to
+          remarkable improvements. The improved CNN model achieves a test
+          accuracy exceeding 97%.
+        </span>
+      </p>
+      <ol start="4" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >VGG16 Model</span
+          ><span
+            style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >It generated the highest test accuracy at 99.93%. The training loss
+          and validation loss path are almost overlapped and both close to 0,
+          which also indicates that it performs quite well.
+        </span>
+      </p>
+      <ol start="5" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            background-color: #ffffff;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5pt 0pt 5pt 14.29pt;
+            padding-left: 3.71pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >ResNet</span
+          ><span
+            style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+          >
+            Model:</span
+          >
+        </li>
+      </ol>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >It also generated a </span
+        ><span style="font-family: Calibri; font-size: 12pt">high test</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          accuracy at 99.87%. However, the validation loss fluctuates
+          significantly and does not converge. It might be the result of high
+          learning rate or overfitting.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Data Visualization</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <img
+          src="./project4_img/6.png"
+          width="600"
+          height="380"
           alt=""
           style="
             -aw-left-pos: 0pt;
@@ -1072,24 +1298,23 @@
             font-size: 12pt;
             font-weight: bold;
           "
-          >Add Dropout Layer</span
+          >Test the Trained Network</span
         >
       </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt">(</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >4 hidden layers of sizes 512, 256, 128, 64 and </span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >dropout rate 20%</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >, learning rate = 0.001, epoch = 200)</span
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Based on the above result, we chose </span
+        ><span style="font-family: Calibri; font-size: 12pt">ResNet</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          Model and VGG16 Model as our final models since they generated highest
+          accuracy. Here are the results of testing:</span
         >
       </p>
-      <p style="margin: 0pt">
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
         <img
-          src="./project3_img/7.png"
-          width="450"
-          height="340"
+          src="./project4_img/7.png"
+          width="554"
+          height="155"
           alt=""
           style="
             -aw-left-pos: 0pt;
@@ -1101,6 +1326,9 @@
         />
       </p>
       <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 10pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt; orphans: 0; text-align: justify; widows: 0">
         <span
           style="
             color: #1e4c77;
@@ -1109,484 +1337,88 @@
             font-weight: bold;
             text-decoration: underline;
           "
-          >HYPERPARAMETER TUNING</span
+          >DEPLOYMENT</span
         >
-      </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt"
-          >We can try for different network structures, criterion, </span
-        ><span style="font-family: Calibri; font-size: 12pt">optimizers</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          and epochs to find model with better validation error. Here is a table
-          listing all the models we build:</span
-        >
-      </p>
-      <p style="margin: 0pt">
-        <img
-          src="./project3_img/8.png"
-          width="420"
-          height="338"
-          alt=""
-          style="
-            -aw-left-pos: 0pt;
-            -aw-rel-hpos: column;
-            -aw-rel-vpos: paragraph;
-            -aw-top-pos: 0pt;
-            -aw-wrap-type: inline;
-          "
-        />
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span style="font-family: Calibri; font-size: 12pt"
-          >Therefore, the MLP with 2</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          hidden layers of sizes </span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >64, 32, L1Loss as criterion, Adam</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          as optimizer (learning rate = 0.001, </span
-        ><span style="font-family: Calibri; font-size: 12pt">weight_decay</span
-        ><span style="font-family: Calibri; font-size: 12pt"> = 0.001)</span
-        ><span style="font-family: Calibri; font-size: 12pt"> and epoch = </span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >120 generate the best result, which generates the lowest MER at
-          0.0887. Here is the training and validation MER for this model</span
-        ><span style="font-family: Calibri; font-size: 12pt">:</span>
-      </p>
-      <p style="margin: 0pt">
-        <img
-          src="./project3_img/9.png"
-          width="450"
-          height="340"
-          alt=""
-          style="
-            -aw-left-pos: 0pt;
-            -aw-rel-hpos: column;
-            -aw-rel-vpos: paragraph;
-            -aw-top-pos: 0pt;
-            -aw-wrap-type: inline;
-          "
-        />
       </p>
       <p style="background-color: #ffffff; margin: 5pt 0pt">
         <span
           style="
-            color: #1e4c77;
+            color: #153d6e;
             font-family: Calibri;
             font-size: 12pt;
             font-weight: bold;
-            text-decoration: underline;
           "
-          >EVALUATION</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt"
-          >I write the code to generate predicted sale prices for test
-          data</span
-        ><span style="font-family: Calibri; font-size: 12pt">. Then I c</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >ompute the signed error rates (without taking the absolute value
-          sign), that is</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 5pt 0pt; text-align: center">
-        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >Signed Error Rate</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
-        </span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >=</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
-          (</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >Predicted Price−Actual Price</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >) / </span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >Actual Price</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt"
-          >and plot the histogram of prediction errors.</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          The bias of the series is about 0.0565, which is quite small.</span
-        >
-      </p>
-      <p style="margin: 0pt">
-        <img
-          src="./project3_img/10.png"
-          width="392"
-          height="288"
-          alt=""
-          style="
-            -aw-left-pos: 0pt;
-            -aw-rel-hpos: column;
-            -aw-rel-vpos: paragraph;
-            -aw-top-pos: 0pt;
-            -aw-wrap-type: inline;
-          "
-        />
-      </p>
-      <p style="background-color: #ffffff; margin: 0pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
+          >Application</span
         >
       </p>
       <p style="background-color: #ffffff; margin: 5pt 0pt">
-        <span
-          style="
-            color: #1e4c77;
-            font-family: Calibri;
-            font-size: 12pt;
-            font-weight: bold;
-            text-decoration: underline;
-          "
-          >PROFIT ANALYSIS</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 0pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >W</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >e assume the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          will make an offer to every property in the valid data based on their
-          predicted price</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
-        ><span
-          style="color: #212121; font-family: 'Cambria Math'; font-size: 12pt"
-          >𝑃𝑃</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >. We assume the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          decides the offer price</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
-        ><span
-          style="color: #212121; font-family: 'Cambria Math'; font-size: 12pt"
-          >𝑂𝑃</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >&#xa0;</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >according to</span
-        >
-      </p>
-      <p style="margin: 0pt; text-align: center">
-        <span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝑂𝑃</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >=</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝑃𝑃</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >/(</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >1</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >+</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝛼</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >) ,</span
-        >
-      </p>
-      <p style="margin: 0pt; text-align: center">
-        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
-      </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt">where</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: 'Cambria Math'; font-size: 12pt">𝛼</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: Calibri; font-size: 12pt">is the (</span
-        ><span style="font-family: Calibri; font-size: 12pt">targeted</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >) profit margin of the </span
-        ><span style="font-family: Calibri; font-size: 12pt">iBuyer</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >. Here we assume the profit margin has already taken into
-          consideration the commission fee charged by the </span
-        ><span style="font-family: Calibri; font-size: 12pt">iBuyer</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          and various costs associated such as transaction cost, administration
-          cost, and holding cost. Note that the commission fee charged by Zillow
-          is often</span
-        ><span style="font-family: Calibri; font-size: 12pt"> </span
-        ><span style="font-family: Calibri; font-size: 12pt">around</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: Calibri; font-size: 12pt">7.5</span
-        ><span style="font-family: Calibri; font-size: 12pt">%</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >and Zillow may charge additional repair costs after home inspection.
-          Thus</span
-        ><span style="font-family: Calibri; font-size: 12pt">,</span
-        ><span style="font-family: Calibri; font-size: 12pt"> we take</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: 'Cambria Math'; font-size: 12pt">𝛼</span
-        ><span style="font-family: Calibri; font-size: 12pt">=</span
-        ><span style="font-family: Calibri; font-size: 12pt">12</span
-        ><span style="font-family: Calibri; font-size: 12pt">%</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >in this case study.</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >We further assume that the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          can resell the property at the same price as the broker in the future
-          once the property is bought. In other words, the resell price is equal
-          to the sale price in the valid data. This assumption may not be
-          exactly true in practice and the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          may sell the house at either a higher or lower price depending on the
-          market trend. But our conclusion will not change too much.</span
-        >
-      </p>
-      <p style="background-color: #ffffff; margin: 6pt 0pt 4.5pt">
-        <span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >Based on the above two assumptions, we can now determine the
-          percentage profit for a property bought by the </span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt"
-          >iBuyer</span
-        ><span style="color: #212121; font-family: Calibri; font-size: 12pt">
-          as</span
-        >
-      </p>
-      <p style="margin: 0pt; text-align: center">
-        <span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >(</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝑆𝑃</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >−</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝑂𝑃</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >)/</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝑂𝑃</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold">
-          .</span
-        >
-      </p>
-      <p style="margin: 0pt; text-align: center">
-        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
-      </p>
-      <p style="margin: 0pt">
         <span style="font-family: Calibri; font-size: 12pt"
-          >We use the percentage profit instead of the absolute profit because
-          the </span
-        ><span style="font-family: Calibri; font-size: 12pt">iBuyer</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          cannot hope to purchase all houses in the market. Therefore, the
-          percentage profit </span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >is a better measure of the profitability of the </span
-        ><span style="font-family: Calibri; font-size: 12pt">iBuyer</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          business model. The aim of the </span
-        ><span style="font-family: Calibri; font-size: 12pt">iBuyer</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          in this simplified setting is to purchase properties for less money
-          than they are sold for, to generate a profit.</span
-        >
-      </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
-      </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt"
-          >However, not every offer will be accepted by the </span
-        ><span style="font-family: Calibri; font-size: 12pt">home owner</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >. Given an offer price, whether the homeowner accepts it depends on
-          the homeowner's perceived valuation. For the current dataset, we lack
-          enough data to determine the homeowner's perceived valuation of the
-          property. However, the actual sale price in the valid data serves as a
-          reasonable proxy of the homeowner's perceived valuation. Therefore, we
-          assume that the </span
-        ><span style="font-family: Calibri; font-size: 12pt">home owner</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          will accept the offer, if</span
-        >
-      </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
-      </p>
-      <p style="margin: 0pt; text-align: center">
-        <span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝑂𝑃</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >&gt;(1−</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝛽</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >)</span
-        ><span
-          style="
-            font-family: 'Cambria Math';
-            font-size: 12pt;
-            font-weight: bold;
-          "
-          >𝑆𝑃</span
-        ><span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >,</span
-        >
-      </p>
-      <p style="margin: 0pt; text-align: center">
-        <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
-          >&#xa0;</span
-        >
-      </p>
-      <p style="margin: 0pt">
-        <span style="font-family: Calibri; font-size: 12pt">where</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: 'Cambria Math'; font-size: 12pt">𝛽</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >is a discounting factor. Here the discounting factor captures the
-          commission fee charged by the conventional realtors which is around
-          6%, as well as the convenience factor that models how much the
-          homeowner values the quick transaction services of the </span
-        ><span style="font-family: Calibri; font-size: 12pt">iBuyer</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          over the conventional relator. We assume</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: 'Cambria Math'; font-size: 12pt">𝛽</span
-        ><span style="font-family: Calibri; font-size: 12pt">=10%</span
-        ><span style="font-family: Calibri; font-size: 12pt">&#xa0;</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >in this case.</span
-        >
-      </p>
-      <p style="margin: 5pt 0pt">
-        <span style="font-family: Calibri; font-size: 12pt"
-          >If the offers are all accepted regardless of their values, the
-          average percentage profit is 0.1259. There is no big difference
-          compared to the profit margin 0.12, which indicates that our predicted
-          prices are quite </span
-        ><span style="font-family: Calibri; font-size: 12pt">similar to</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          the real sale prices.
+          >Now the model can do the image classification for vegetables with an
+          accuracy higher than 99%. </span
+        ><br /><span style="font-family: Calibri; font-size: 12pt"
+          >In business scenarios, it is advantageous for enhancing self-checkout
+          machines: retailers can provide a faster and more efficient checkout
+          experience. Customers only need to place the vegetables on the
+          scanner, and the system will automatically recognize and calculate the
+          price, reducing manual intervention in the checkout process. This can
+          lead to a reduction in operational costs, decrease human errors, and
+          enhance the overall customer experience. Moreover, through the
+          vegetable recognition model, businesses can collect data on purchasing
+          behavior. This data can be utilized to analyze sales trends, optimize
+          inventory management, and even personalize product recommendations.
         </span>
       </p>
-      <p style="margin: 5pt 0pt">
-        <span style="font-family: Calibri; font-size: 12pt">However, b</span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >ased on the sale price in the valid data and the acceptance rule, the
-          mean percentage profit among all accepted offers is -0.034. There is a
-          big difference compared to the targeted profit margin 0.12. </span
-        ><span style="font-family: Calibri; font-size: 12pt"
-          >The bias of the prediction errors when restricting to those
-          properties whose owners accepted the offer is about 0.2 and the
-          histogram is shown as below.</span
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Ethical Consideration</span
         >
       </p>
-      <p style="margin: 0pt">
-        <img
-          src="./project3_img/11.png"
-          width="381"
-          height="280"
-          alt=""
-          style="
-            -aw-left-pos: 0pt;
-            -aw-rel-hpos: column;
-            -aw-rel-vpos: paragraph;
-            -aw-top-pos: 0pt;
-            -aw-wrap-type: inline;
-          "
-        />
-      </p>
-      <p style="margin: 5pt 0pt">
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
         <span style="font-family: Calibri; font-size: 12pt"
-          >The bias of the prediction error is relatively high, which indicates
-          that the predicted prices are generally higher than the true prices.
-          Therefore, </span
-        ><span style="font-family: Calibri; font-size: 12pt">iBuyer</span
+          >An essential ethical concern lies in privacy concerns, specifically
+          regarding the collection of data on purchasing behavior. Clear
+          communication with customers about data usage and obtaining consent is
+          paramount. Another ethical consideration is Job Displacement: the
+          introduction of automation technologies, like self-checkout machines,
+          could result in the displacement of traditional cashier roles.
+          Businesses need to assess the social and economic impacts of these
+          changes and proactively seek ways to </span
+        ><span style="font-family: Calibri; font-size: 12pt">retrain</span
         ><span style="font-family: Calibri; font-size: 12pt">
-          actually provides higher offer price so the </span
-        ><span style="font-family: Calibri; font-size: 12pt">home owners</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          would like to accept the offer. This will lead to the result that </span
-        ><span style="font-family: Calibri; font-size: 12pt">iBuyer</span
-        ><span style="font-family: Calibri; font-size: 12pt">
-          buys these houses using high prices but only resell them at low price,
-          that’s why the mean percentage profit is negative and quite different
-          from the profit margin 0.12.
-        </span>
+          or transition affected employees. These ethical considerations are
+          critical for ensuring responsible and equitable practices in the
+          deployment of technologies in retail environments.</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span
+          style="
+            color: #153d6e;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >Related Risks</span
+        >
+      </p>
+      <p style="background-color: #ffffff; margin: 5pt 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The model is not 100% correct. As the model keeps training more data,
+          some biases would also arise. If machine misidentification leads to
+          customer losses and subsequent complaints, companies may face legal
+          disputes. Regularly auditing and </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >evaluating the model's performance is crucial for businesses to
+          address and mitigate biases.</span
+        >
       </p>
     </div>
-
-
       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
