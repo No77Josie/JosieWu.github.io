@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project3</title>
+    <title>Project8</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,7 +11,41 @@
       crossorigin="anonymous"
     />
   </head>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark .fixed-top">
+  <style>
+    .report {
+        width: 60%;
+        margin-bottom: 10em;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    .bg-custom {
+      background-image: url("your-background-image-url.jpg");
+      background-size: cover;
+      color: rgb(190, 143, 143);
+    }
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto;
+      margin-top: 3em;
+    }
+    .custom-border {
+      border-width: 5px !important; /* Adjust the border width as needed */
+      border-color: rgb(
+        143,
+        123,
+        123
+      ) !important; /* Optional: change the border color */
+      border-radius: 20px;
+    }
+    .dropdown-menu a {
+      color: rgb(136, 70, 106);
+    }
+  </style>
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: rgb(224, 143, 188);">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="javascript:void(0)">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -19,37 +53,663 @@
       </button> -->
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item" style = "margin-right: 10px;">
-            <a class="nav-link" href="./index.html">Home</a>
+          <li class="nav-item" style="margin-right: 10px;">
+            <a class="nav-link" href="./index.html" style = "color: white;">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Project</a>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown" style = "color: white;"
+              >Project</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./project1.html">CFA Research Challenge : Stock Price Prediction</a></li>
-                <li><a class="dropdown-item" href="./project2.html">Portfolio Analysis (Python, Pandas)</a></li>
-                <li><a class="dropdown-item" href="./project3.html">House price prediction (MLP)</a></li>
-                <li><a class="dropdown-item" href="./project4.html">Image Classification (CNN)</a></li>
-                <li><a class="dropdown-item" href="./project5.html">Collaborative Filtering (Deep Learning)</a></li>
-                <li><a class="dropdown-item" href="./project6.html">Ruin Probability Prediction (R)</a></li>
-                <li><a class="dropdown-item" href="./project7.html">Health status prediction (R)</a></li>
-                <li><a class="dropdown-item" href="./project8.html">Data Visualization (Tableau)</a></li>
+              <li>
+                <a class="dropdown-item" href="./project1.html"
+                  >CFA Research Challenge : Stock Price Prediction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project2.html"
+                  >Portfolio Analysis (Python, Pandas)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project3.html"
+                  >House price prediction (MLP)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project4.html"
+                  >Image Classification (CNN)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project5.html"
+                  >Collaborative Filtering (Deep Learning)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project6.html"
+                  >Ruin Probability Prediction (R)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./project7.html"
+                  >Health status prediction (R)</a
+                >
+              </li>
+                            <li>
+                <a class="dropdown-item" href="./project8.html"
+                  >Data Visualization (Tableau)</a
+                >
+              </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./resume.html">Resume</a>
+            <a class="nav-link" href="./resume.html" style = "color: white;">Resume</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="text" placeholder="Search">
-          <button class="btn btn-primary" type="button">Search</button>
-        </form>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn btn-primary" type="button" style = "background-color: rgb(125, 145, 211); border: none;">Search</button>
+        </form> -->
       </div>
     </div>
   </nav>
+    <div style = "margin-bottom: 5em;"></div>
+    <div class = "container report">
+      <p style="margin: 0pt; text-align: center">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 16pt;
+            font-weight: bold;
+          "
+          >Data Visualization of Online Specialty Auction Data</span
+        >
+      </p>
+      <p
+        style="
+          font-size: 15pt;
+          line-height: 115%;
+          margin: 0pt;
+          text-align: center;
+        "
+      >
+        <span style="font-family: Calibri; font-size: 15pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >Introduction</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <!-- <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        > -->
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >This document summarizes the key insights that our team has derived
+          from the Online Auction Website Data. We have analyzed the data in
+          terms of four major aspects (</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >Customer</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+        >
+          Preferences</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >, </span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >Sales Trends, </span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >and </span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >Human Resources Management</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >). With this information, we provided a series of actio</span
+        ><span
+          style="font-family: Calibri; font-size: 12pt; font-weight: normal"
+          >nable insights and recommendations for the CFO and COO to expand
+          market presence and increase revenue.</span
+        >
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >E</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >xecutive Dashboard</span
+        >
+      </p>
 
-    <h1>Project8</h1>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <img
+          src="./project8_img/1.png"
+          width="720"
+          height="434"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The Executive Metric Dashboard offers a comprehensive overview of an
+          online auction platform's performance metrics. The dashboard is
+          segmented into various sections to depict a multi-dimensional analysis
+          of the company's activities.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >At the top, key performance indicators (KPIs) are presented: 28,827
+          buyers, 6,604 sellers, a profit of $41.618K, 457,803K sales, a profit
+          ratio of 9.09%, 278 auctions, and 75,548 items sold. </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >The triangles represent the year-on-year growth rate for last month
+          (September 2023). All the growth rates are positive except for profit
+          ratio, which remains the same (</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >the profit is always 10% of the total sales</span
+        ><span style="font-family: Calibri; font-size: 12pt">)</span
+        ><span style="font-family: Calibri; font-size: 12pt">.</span>
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The "Auction Category Metrics" section uses line graphs to display
+          trends over the last three years in different auction categories,
+          including construction (CONST), vehicles (VE), agriculture (AG),
+          government (GOVT), and trucks (TRUCK), with an "Others" category
+          capturing residual data. This visual representation allows for quick
+          identification of trends and performance in each category.</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          By choosing different metrics (including profit, </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >sales, items, buyers, sellers) and different relative data
+          (customized), we can see the trend lines for different metrics and
+          period. The details are shown in the table on the right.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >A heatmap titled "Hot Spot by State" visualizes profit distribution
+          across the United States, guiding strategic decisions on geographic
+          focus.</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          By clicking on different states, it will filter all other sheets so
+          that it is easy for us to see the details of different states.</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >The pie chart breaks down the percentage of sales by category,
+          indicating that Construction Equipment and Trucks, Medium and Heavy
+          Duty, are the most significant contributors to sales.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >The "Top Buyer Managers" and "Top Seller Managers" bar charts rank
+          the individuals contributing most to purchases and sales,
+          respectively, which can be instrumental for performance evaluation and
+          incentive planning.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">B</span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >y exploring this dashboard, we can identify some questions or growth
+          opportunity regarding our business:</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <ol type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 0pt 0pt 0pt 14.11pt;
+            padding-left: 6.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Customer Preferences:</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            It is observed that across different states, there is a variance in
+            sales volume, active customer numbers, and the items traded. This
+            piques our curiosity as to whether there are discernible item and
+            auction preferences in various states. Do our buyers and sellers
+            possess any unique characteristics?</span
+          >
+        </li>
+      </ol>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <ol start="2" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 0pt 0pt 0pt 14.11pt;
+            padding-left: 6.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Sales Trends:</span
+          ><span style="font-family: Calibri; font-size: 12pt">
+            We have noticed that for different metrics, the trend lines within
+            various auction categories tend to move together. It is thus
+            imperative to understand the sales trends over the past five years
+            and to determine if there is a seasonal pattern.</span
+          >
+        </li>
+      </ol>
+      <p style="margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <ol start="3" type="1" style="margin: 0pt; padding-left: 0pt">
+        <li
+          style="
+            font-family: Calibri;
+            font-size: 12pt;
+            margin: 0pt 0pt 0pt 14.11pt;
+            padding-left: 6.89pt;
+            text-indent: 0pt;
+          "
+        >
+          <span style="font-family: Calibri; font-size: 12pt; font-weight: bold"
+            >Human Resource Management: </span
+          ><span style="font-family: Calibri; font-size: 12pt"
+            >There is a noticeable discrepancy in the sales figures among
+            different managers. We are keen to uncover what unique strategies
+            successful managers may employ, as well as how we should evaluate
+            managers based on different metrics to decide on promotions.</span
+          >
+        </li>
+      </ol>
 
-    <script
+  
+      <p style="margin: 0pt">
+        <img
+          src="./project8_img/2.png"
+          width="720"
+          height="457"
+          alt=""
+          style="
+            -aw-left-pos: 46.25pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 19.2pt;
+            -aw-wrap-type: topbottom;
+          "
+        /><br /><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >C</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >ustomer Analysis</span
+        >
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt 0pt 0pt 18pt">
+        <img
+          src="./project8_img/3.png"
+          width="675"
+          height="238"
+          alt=""
+          style="
+            -aw-left-pos: 16.11pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 115.52pt;
+            -aw-wrap-type: topbottom;
+          "
+        /><br /><span style="font-family: Calibri; font-size: 12pt"
+          >We have</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          identified the top four states in terms of active buyer participation
+          in auctions, which are KS (Kansas), MO (Missouri), OK (Oklahoma), and
+          TX (Texas). These states are significant contributors to the total
+          auction fees as well, suggesting a high level of engagement in auction
+          activities. The most profitable items in these auctions are from
+          manufacturers like John Deere, Ford, and Caterpillar. This trend
+          aligns with the economic profiles of these states, which have
+          substantial agricultural and industrial sectors that necessitate
+          robust machinery such as tractors, trucks, and pickup vans.</span
+        >
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt 0pt 0pt 18pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt 0pt 0pt 18pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >On the other hand, we have recognized that UT (Utah) is experiencing
+          a declining sales trend. The root cause appears to be its top demand
+          category, BLISS, which currently ranks 33rd among the various auction
+          categories our company offers. </span
+        ><span style="font-family: Calibri; font-size: 12pt">In order to</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          improve sales in UT (Utah), the CEO should consider increasing the
+          frequency of auctions in the BLISS category to better align with its
+          high demand in UT. On a higher level, our team would suggest the CEO
+          to redistribute its resources from those top selling states to other
+          less active states.</span
+        >
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <img
+          src="./project8_img/4.png"
+          width="720"
+          height="184"
+          alt=""
+          style="
+            -aw-left-pos: 5.79pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 18.71pt;
+            -aw-wrap-type: topbottom;
+          "
+        /><br />
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt 0pt 0pt 18pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Next, our team has investigated the key characteristics of our
+          frequent buyers (Top 1000). We have discovered that they exhibit a
+          greater average item distance. Given the size and transportation costs
+          associated with products, we typically prioritize advertising based on
+          item distance. However, with these frequent buyers, we can deviate
+          from this approach and focus on promoting items that are comparatively
+          distant from their usual preferences.</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >S</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >ales Trends</span
+        >
+      </p>
+
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt 0pt 0pt 18pt">
+        <img
+          src="./project8_img/5.png"
+          width="720"
+          height="490"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt 0pt 0pt 18pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt 0pt 0pt 18pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >When examined closely, there is a clear pattern of sales increasing
+          from January to December every year with December’s total sales being
+          the highest and January being the lowest. This phenomenon could be
+          attributed to construction industry specific reasons, because this
+          auction website focuses on selling large construction equipment such
+          as trucks, trailers, and forestry tools. The COO can use this
+          information to decide </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >whether or not</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          to advertise more aggressively during the first half of each year and
+          redistribute a portion of December’s marketing cost to other months to
+          achieve a smoother distribution throughout the year.
+        </span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt 0pt 0pt 18pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+          "
+          >&#xa0;</span
+        >
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >H</span
+        ><span
+          style="
+            color: #1e4c77;
+            font-family: Calibri;
+            font-size: 12pt;
+            font-weight: bold;
+            text-decoration: underline;
+          "
+          >uman Resources Management</span
+        >
+      </p>
+
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <img
+          src="./project8_img/6.png"
+          width="709"
+          height="419"
+          alt=""
+          style="
+            -aw-left-pos: 0.3pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0.3pt;
+            -aw-wrap-type: topbottom;
+          "
+        /><br />
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Lastly, we devised different plans for promoting certain seller and
+          buyer managers to increase total sales. In terms of seller manager, we
+          concluded that we </span
+        ><span style="font-family: Calibri; font-size: 12pt">can</span
+        ><span style="font-family: Calibri; font-size: 12pt"> evaluate </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >these managers’ performance by examining their YTD growth sales rate,
+          current sales amount, and predicted future sales amount.
+        </span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <img
+          src="./project8_img/7.png"
+          width="720"
+          height="692"
+          alt=""
+          style="
+            -aw-left-pos: 0pt;
+            -aw-rel-hpos: column;
+            -aw-rel-vpos: paragraph;
+            -aw-top-pos: 0pt;
+            -aw-wrap-type: inline;
+          "
+        />
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >In terms of buyer managers, we evaluated their performance by looking
+          at their weighted average growth rate, the number of states</span
+        ><span style="font-family: Calibri; font-size: 12pt">
+          covered, and the number of existing partnerships they have. </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >The managers are categorized into four levels based on their tenure
+          and sales volumes: Master, Professional, Intermediate, and
+          Novice.</span
+        >
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >We have identified Brandon Grubs as a manager with the highest growth
+          rate in sales volume. Our curiosity leads us to investigate the
+          reasons behind his exceptional performance. An examination into the
+          Manager state's distribution shows that, compared to his peers,
+          Brandon's operations span an impressive 28 states, significantly
+          surpassing the reach of other managers. Moreover, </span
+        ><span style="font-family: Calibri; font-size: 12pt">most of his</span
+        ><span style="font-family: Calibri; font-size: 12pt"> </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >profit earnings </span
+        ><span style="font-family: Calibri; font-size: 12pt">(64.76%) </span
+        ><span style="font-family: Calibri; font-size: 12pt"
+          >are derived from states with smaller overall business volumes.</span
+        >
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt">&#xa0;</span>
+      </p>
+      <p style="font-size: 12pt; line-height: 115%; margin: 0pt">
+        <span style="font-family: Calibri; font-size: 12pt"
+          >Additionally, it has been observed that Brandon has extensive
+          collaborations with other managers. This expansive operational reach
+          and spirit of collaboration are key strategies contributing to
+          Brandon's success and serve as valuable practices from which other
+          managers could learn.</span
+        >
+      </p>
+    </div>
+      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
